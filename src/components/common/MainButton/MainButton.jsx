@@ -1,4 +1,4 @@
-import MainButtonArrow from "images/icons/MainButtonArrow/MainButtonArrow";
+import MainButtonArrow from "images/commonIcons/MainButtonArrow/MainButtonArrow";
 import { Button, MainButtonArrowWrapper } from "./MainButton.styled";
 
 export default function MainButton() {

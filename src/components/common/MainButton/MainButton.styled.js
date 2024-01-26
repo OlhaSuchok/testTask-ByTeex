@@ -16,12 +16,13 @@ export const Button = styled.button`
 
   cursor: pointer;
 
-  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 `;
 
 export const MainButtonArrowWrapper = styled.div`
   margin-left: 20px;
-  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
-  }
 `;

@@ -1,5 +1,6 @@
-import Drop from "images/Info/Drop/Drop";
-import Cloud from "images/Info/Cloud/Cloud";
+import Drop from "images/infoIcons/Drop/Drop";
+import Cloud from "images/infoIcons/Cloud/Cloud";
+import Light from "images/infoIcons/Light/Light";
 
 import {
   Section,
@@ -27,6 +28,14 @@ export default function InfoSection() {
         <InfoItem>
           <InfoIconWrapper>
             <Drop />
+          </InfoIconWrapper>
+          <InfoMainText>2,546,167 days</InfoMainText>
+          <InfoText>of drinking water saved</InfoText>
+        </InfoItem>
+
+        <InfoItem>
+          <InfoIconWrapper>
+            <Light />
           </InfoIconWrapper>
           <InfoMainText>2,546,167 days</InfoMainText>
           <InfoText>of drinking water saved</InfoText>

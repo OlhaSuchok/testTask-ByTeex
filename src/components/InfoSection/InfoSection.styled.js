@@ -29,6 +29,7 @@ export const Title = styled.h2`
   color: #2a2996;
 
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+    margin-bottom: 30px;
   }
 `;
 
@@ -41,7 +42,11 @@ export const InfoList = styled.ul`
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
+
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
   }
 `;
 
@@ -56,15 +61,28 @@ export const InfoItem = styled.li`
   padding-bottom: 16px;
   padding-top: 16px;
 
-  border-bottom: 1px solid #c4c4c4;
+  &:not(:last-child) {
+    border-bottom: 1px solid #c4c4c4;
+  }
 
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+    border-bottom: 1px solid transparent;
+
+    padding-bottom: 0;
+    padding-top: 0;
+
+    &:not(:last-child) {
+      border-right: 1px solid #c4c4c4;
+    }
+
+    &:not(:last-child) {
+      border-bottom: none;
+    }
   }
 `;
 
 export const InfoIconWrapper = styled.div`
-  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
-  }
+  margin-bottom: 10px;
 `;
 
 export const InfoMainText = styled.p`
@@ -76,9 +94,6 @@ export const InfoMainText = styled.p`
   line-height: 1;
 
   color: #2a2996;
-
-  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
-  }
 `;
 
 export const InfoText = styled.p`
@@ -88,7 +103,4 @@ export const InfoText = styled.p`
   line-height: 1.4;
 
   color: #2a2996;
-
-  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
-  }
 `;

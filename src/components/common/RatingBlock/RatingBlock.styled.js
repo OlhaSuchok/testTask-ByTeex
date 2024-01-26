@@ -5,9 +5,6 @@ export const RatingBlockWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
-  }
 `;
 
 export const RatingWrapper = styled.div`
@@ -16,29 +13,7 @@ export const RatingWrapper = styled.div`
   justify-content: center;
   align-items: center;
 
-  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
-  }
-`;
-
-export const StarList = styled.ul`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-
-  padding-left: 0;
-
-  &:not(:last-child) {
-    margin-right: 3px;
-  }
-
-  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
-  }
-`;
-
-export const StarWrapper = styled.li`
-  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
-  }
+  padding-top: 10px;
 `;
 
 export const RatingText = styled.p`
@@ -49,7 +24,4 @@ export const RatingText = styled.p`
   line-height: 1.7;
 
   color: #828282;
-
-  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
-  }
 `;

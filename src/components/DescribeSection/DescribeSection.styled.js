@@ -163,7 +163,7 @@ export const SliderName = styled.p`
   margin-bottom: 0;
   margin-top: 20px;
 
-  color: ${({ theme }) => theme.colors.MAIN_ACCENT_TEXT_COLOR};
+  color: #676869;
 
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
   }

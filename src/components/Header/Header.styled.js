@@ -20,7 +20,6 @@ export const Container = styled.header`
 `;
 
 export const Text = styled.p`
-  /* text-align: center; */
   margin-right: 8px;
   margin-left: 8px;
 

@@ -1,4 +1,9 @@
 import RatingBlock from "components/common/RatingBlock/RatingBlock";
+
+import Basket from "images/useProductIcons/Basket/Basket";
+import Car from "images/useProductIcons/Car/Car";
+import Sun from "images/useProductIcons/Sun/Sun";
+
 import {
   Section,
   Title,
@@ -8,10 +13,6 @@ import {
   CardListItemMainText,
   CardListItemText,
 } from "./UseProductSection.styled";
-
-import Basket from "images/UseProduct/Basket/Basket";
-import Car from "images/UseProduct/Car/Car";
-import Sun from "images/UseProduct/Sun/Sun";
 
 export default function UseProductSection() {
   return (

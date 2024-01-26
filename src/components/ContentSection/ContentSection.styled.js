@@ -128,6 +128,9 @@ export const CardListItem = styled.li`
     &:not(:last-child) {
       margin-right: 40px;
     }
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
 
     margin-bottom: 0;
   }
@@ -153,6 +156,7 @@ export const CardListItemMainText = styled.p`
   color: #676869;
   margin-top: 0;
 
+  margin-bottom: 0;
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
   }
 `;
@@ -178,6 +182,8 @@ export const CardListAvatarWrapper = styled.div`
   justify-content: flex-start;
   align-items: flex-start;
 
+  margin-bottom: 10px;
+
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
   }
 `;
@@ -186,7 +192,7 @@ export const StarListNameWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
   }

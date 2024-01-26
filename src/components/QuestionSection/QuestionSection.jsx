@@ -1,12 +1,11 @@
-import Plus from "images/icons/Plus/Plus";
 import RatingBlock from "components/common/RatingBlock/RatingBlock";
+
+import Plus from "images/commonIcons/Plus/Plus";
 
 import firstImageDesctop1 from "../../images/pictures/faqSection/1image1x@-1464.jpg";
 import firstImageDesctop2 from "../../images/pictures/faqSection/1image2x@-1464.jpg";
-
 import secondImageDesctop1 from "../../images/pictures/faqSection/2image1x@-1464.jpg";
 import secondImageDesctop2 from "../../images/pictures/faqSection/2image2x@-1464.jpg";
-
 import thirdImageDesctop1 from "../../images/pictures/faqSection/3image1x@-1464.jpg";
 import thirdImageDesctop2 from "../../images/pictures/faqSection/3image2x@-1464.jpg";
 

@@ -1,25 +1,20 @@
 import RatingBlock from "components/common/RatingBlock/RatingBlock";
 
-import Clock from "images/footer/Clock/Clock";
-import Car from "images/footer/Car/Car";
-import Basket from "images/footer/Basket/Basket";
-import Safe from "images/footer/Safe/Safe";
+import Clock from "images/footerIcons/Clock/Clock";
+import Car from "images/footerIcons/Car/Car";
+import Basket from "images/footerIcons/Basket/Basket";
+import Safe from "images/footerIcons/Safe/Safe";
 
 import firstImageDesctop1 from "../../images/pictures/footerSection/1image1x@-1464.jpg";
 import firstImageDesctop2 from "../../images/pictures/footerSection/1image2x@-1464.jpg";
-
 import firstImageMobile1 from "../../images/pictures/footerSection/1image1x@-428.jpg";
 import firstImageMobile2 from "../../images/pictures/footerSection/1image2x@-428.jpg";
-
 import secondImageDesctop1 from "../../images/pictures/footerSection/2image1x@-1464.jpg";
 import secondImageDesctop2 from "../../images/pictures/footerSection/2image2x@-1464.jpg";
-
 import secondImageMobile1 from "../../images/pictures/footerSection/2image1x@-428.jpg";
 import secondImageMobile2 from "../../images/pictures/footerSection/2image2x@-428.jpg";
-
 import thirdImageDesctop1 from "../../images/pictures/footerSection/3image1x@-1464.jpg";
 import thirdImageDesctop2 from "../../images/pictures/footerSection/3image2x@-1464.jpg";
-
 import thirdImageMobile1 from "../../images/pictures/footerSection/3image1x@-428.jpg";
 import thirdImageMobile2 from "../../images/pictures/footerSection/3image2x@-428.jpg";
 

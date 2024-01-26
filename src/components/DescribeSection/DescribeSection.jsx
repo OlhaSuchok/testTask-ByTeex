@@ -1,10 +1,9 @@
-import Eco from "images/DescribeIcons/Eco/Eco";
-// import Canadian from "images/DescribeIcons/Canadian/Canadian";
-// import Jillians from "images/DescribeIcons/Jillians/Jillians";
-import Sun from "images/HeroIcons/Sun/Sun";
-import Wave from "images/HeroIcons/Wave/Wave";
-import Cloud from "images/HeroIcons/Cloud/Cloud";
-import Leaf from "images/HeroIcons/Leaf/Leaf";
+import Eco from "images/describeIcons/Eco/Eco";
+import Sun from "images/heroIcons/Sun/Sun";
+import Wave from "images/heroIcons/Wave/Wave";
+import Cloud from "images/heroIcons/Cloud/Cloud";
+import Leaf from "images/heroIcons/Leaf/Leaf";
+
 import RatingBlock from "components/common/RatingBlock/RatingBlock";
 
 import {

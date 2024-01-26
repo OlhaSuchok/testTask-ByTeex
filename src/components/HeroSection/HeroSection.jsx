@@ -1,9 +1,9 @@
-import Logo from "images/icons/Logo/Logo";
-// import GalleryList from "./GalleryList/GalleryList";
-import Sun from "images/HeroIcons/Sun/Sun";
-import Basket from "images/HeroIcons/Basket/Basket";
-import Wave from "images/HeroIcons/Wave/Wave";
 import MainButton from "components/common/MainButton/MainButton";
+
+import Logo from "images/commonIcons/Logo/Logo";
+import Sun from "images/heroIcons/Sun/Sun";
+import Basket from "images/heroIcons/Basket/Basket";
+import Wave from "images/heroIcons/Wave/Wave";
 
 import {
   Section,
@@ -27,7 +27,6 @@ export default function HeroSection() {
         <MainText>Don’t apologize for being comfortable.</MainText>
       </LogoTitleWrapper>
       <Gallery></Gallery>
-      {/* <GalleryList /> */}
       {/* <ImageSlider /> */}
       <DescriptionList>
         <DescriptionItem>

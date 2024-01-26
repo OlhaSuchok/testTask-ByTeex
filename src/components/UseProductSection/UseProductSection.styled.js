@@ -97,7 +97,7 @@ export const CardListItem = styled.li`
 `;
 
 export const CardListItemIcon = styled.div`
-  margin-bottom: 15px;
+  margin-bottom: 0;
 
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
   }

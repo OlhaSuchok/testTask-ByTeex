@@ -1,4 +1,4 @@
-import Star from "images/DescribeIcons/Star/Star";
+import Star from "images/describeIcons/Star/Star";
 
 import { StarListWrapper, StarWrapper } from "./StarList.styled";
 

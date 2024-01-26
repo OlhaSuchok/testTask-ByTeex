@@ -5,8 +5,6 @@ export const Section = styled.section`
 
   display: flex;
   flex-direction: column;
-  /* justify-content: center;
-  align-items: center; */
 
   padding-top: 30px;
   padding-left: 46px;

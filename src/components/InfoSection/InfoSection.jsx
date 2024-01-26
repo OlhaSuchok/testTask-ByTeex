@@ -1,6 +1,6 @@
-import Drop from "images/Info/Drop/Drop";
-import Cloud from "images/Info/Cloud/Cloud";
-import Light from "images/Info/Light/Light";
+import Drop from "images/infoIcons/Drop/Drop";
+import Cloud from "images/infoIcons/Cloud/Cloud";
+import Light from "images/infoIcons/Light/Light";
 
 import {
   Section,

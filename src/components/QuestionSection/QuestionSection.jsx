@@ -1,6 +1,8 @@
-import RatingBlock from "components/common/RatingBlock/RatingBlock";
+import { useState } from "react";
 
+import RatingBlock from "components/common/RatingBlock/RatingBlock";
 import Plus from "images/commonIcons/Plus/Plus";
+import Minus from "images/commonIcons/Minus/Minus";
 
 import firstImageDesctop1 from "../../images/pictures/faqSection/1image1x@-1464.jpg";
 import firstImageDesctop2 from "../../images/pictures/faqSection/1image2x@-1464.jpg";
@@ -25,67 +27,57 @@ import {
   ThirdImageWrapper,
   FirstTransparentBlock,
   SecondTransparentBlock,
+  QuestionListItemQuestion,
+  QuestionListItemResponse,
+  Button,
 } from "./QuestionSection.styled";
 
 export default function QuestionSection() {
+  const [openQuestions, setOpenQuestions] = useState([]);
+
+  const toggleQuestion = (questionIndex) => {
+    if (openQuestions.includes(questionIndex)) {
+      setOpenQuestions(
+        openQuestions.filter((index) => index !== questionIndex)
+      );
+    } else {
+      setOpenQuestions([...openQuestions, questionIndex]);
+    }
+  };
+
   return (
     <Section>
       <QuestionListWrapper>
         <Title>Frequently asked questions.</Title>
         <QuestionList>
-          <QuestionListItem>
-            <QuestionListItemText>
-              lorem ipsum dolor sit amet
-            </QuestionListItemText>
-            <QuestionListItemPlusWrapper>
-              <Plus />
-            </QuestionListItemPlusWrapper>
-          </QuestionListItem>
-
-          <QuestionListItem>
-            <QuestionListItemText>
-              lorem ipsum dolor sit amet
-            </QuestionListItemText>
-            <QuestionListItemPlusWrapper>
-              <Plus />
-            </QuestionListItemPlusWrapper>
-          </QuestionListItem>
-
-          <QuestionListItem>
-            <QuestionListItemText>
-              lorem ipsum dolor sit amet
-            </QuestionListItemText>
-            <QuestionListItemPlusWrapper>
-              <Plus />
-            </QuestionListItemPlusWrapper>
-          </QuestionListItem>
-
-          <QuestionListItem>
-            <QuestionListItemText>
-              lorem ipsum dolor sit amet
-            </QuestionListItemText>
-            <QuestionListItemPlusWrapper>
-              <Plus />
-            </QuestionListItemPlusWrapper>
-          </QuestionListItem>
-
-          <QuestionListItem>
-            <QuestionListItemText>
-              lorem ipsum dolor sit amet
-            </QuestionListItemText>
-            <QuestionListItemPlusWrapper>
-              <Plus />
-            </QuestionListItemPlusWrapper>
-          </QuestionListItem>
-
-          <QuestionListItem>
-            <QuestionListItemText>
-              lorem ipsum dolor sit amet
-            </QuestionListItemText>
-            <QuestionListItemPlusWrapper>
-              <Plus />
-            </QuestionListItemPlusWrapper>
-          </QuestionListItem>
+          {[1, 2, 3, 4, 5, 6].map((questionIndex) => (
+            <QuestionListItem key={questionIndex}>
+              <QuestionListItemQuestion>
+                <QuestionListItemText>
+                  lorem ipsum dolor sit amet
+                </QuestionListItemText>
+                <QuestionListItemPlusWrapper>
+                  <Button
+                    type="button"
+                    onClick={() => toggleQuestion(questionIndex)}
+                  >
+                    {openQuestions.includes(questionIndex) ? (
+                      <Minus />
+                    ) : (
+                      <Plus />
+                    )}
+                  </Button>
+                </QuestionListItemPlusWrapper>
+              </QuestionListItemQuestion>
+              {openQuestions.includes(questionIndex) && (
+                <QuestionListItemResponse>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                  lobortis sapien facilisis tincidunt pellentesque. In eget
+                  ipsum et felis finibus consequat.
+                </QuestionListItemResponse>
+              )}
+            </QuestionListItem>
+          ))}
         </QuestionList>
       </QuestionListWrapper>
       <ImagesBlockWrapper>

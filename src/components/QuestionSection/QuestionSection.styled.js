@@ -21,7 +21,7 @@ export const Section = styled.section`
 
     padding-left: 200px;
     padding-right: 70px;
-    padding-bottom: 0;
+    padding-bottom: 70px;
   }
 `;
 
@@ -61,15 +61,27 @@ export const QuestionList = styled.ul`
 
 export const QuestionListItem = styled.li`
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 
   width: 100%;
-
   padding-top: 22px;
-  padding-bottom: 22px;
-
   border-bottom: 1px solid #c4c4c4;
+
+  position: relative;
+  overflow: hidden;
+
+  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+  }
+`;
+
+export const Button = styled.button`
+  display: block;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: transparent;
 
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
   }
@@ -178,6 +190,34 @@ export const SecondTransparentBlock = styled.div`
 
   background: #f9f0e5;
   background: linear-gradient(to top, #f9f0e5 0%, #ffffff 90%);
+
+  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+  }
+`;
+
+export const QuestionListItemResponse = styled.p`
+  font-size: 15px;
+  font-family: ${({ theme }) => theme.fonts.sofiaProRegular};
+  line-height: 1.5;
+
+  color: #676869;
+
+  margin: 0;
+  padding-bottom: 20px;
+
+  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+  }
+`;
+
+export const QuestionListItemQuestion = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+
+  padding-top: 22px;
+  padding-bottom: 22px;
 
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
   }

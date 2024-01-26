@@ -1,4 +1,4 @@
-import Plus from "images/Plus/Plus";
+import Plus from "images/icons/Plus/Plus";
 import RatingBlock from "components/common/RatingBlock/RatingBlock";
 import {
   Section,

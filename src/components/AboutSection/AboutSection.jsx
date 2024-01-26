@@ -1,10 +1,79 @@
-import { Section, Title, Text } from "./AboutSection.styled";
+import {
+  Section,
+  Title,
+  ImagesWrapper,
+  FirstImageWrapper,
+  CenterImageWrapper,
+  ThirdImageWrapper,
+  Text,
+} from "./AboutSection.styled";
+
+import firstImageMobile1 from "../../images/pictures/aboutSection/about-a1x@-428.jpg";
+import firstImageMobile2 from "../../images/pictures/aboutSection/about-a2x@-428.jpg";
+
+import firstImageDesctop1 from "../../images/pictures/aboutSection/about-a1x@-1464.jpg";
+import firstImageDesctop2 from "../../images/pictures/aboutSection/about-a2x@-1464.jpg";
+
+import secondImageMobile1 from "../../images/pictures/aboutSection/about-b1x@-428.jpg";
+import secondImageMobile2 from "../../images/pictures/aboutSection/about-b2x@-428.jpg";
+
+import secondImageDesctop1 from "../../images/pictures/aboutSection/about-b1x@-1464.jpg";
+import secondImageDesctop2 from "../../images/pictures/aboutSection/about-b2x@-1464.jpg";
+
+import thirdImageMobile1 from "../../images/pictures/aboutSection/about-c1x@-428.jpg";
+import thirdImageMobile2 from "../../images/pictures/aboutSection/about-c2x@-428.jpg";
+
+import thirdImageDesctop1 from "../../images/pictures/aboutSection/about-c1x@-1464.jpg";
+import thirdImageDesctop2 from "../../images/pictures/aboutSection/about-c2x@-1464.jpg";
 
 export default function AboutSection() {
   return (
     <Section>
       <Title>Be your best self.</Title>
-      <p>IMAGES</p>
+      <ImagesWrapper>
+        <FirstImageWrapper>
+          <picture>
+            <source
+              srcSet={`${firstImageDesctop1} 1x, ${firstImageDesctop2} 2x`}
+              media="(min-width:1464px)"
+            />
+            <source
+              srcSet={`${firstImageMobile1} 1x, ${firstImageMobile2} 2x`}
+              media="(min-width:428px)"
+            />
+            <img src={firstImageMobile2} loading="lazy" alt="Girl"></img>
+          </picture>
+        </FirstImageWrapper>
+
+        <CenterImageWrapper>
+          <picture>
+            <source
+              srcSet={`${secondImageDesctop1} 1x, ${secondImageDesctop2} 2x`}
+              media="(min-width:1464px)"
+            />
+            <source
+              srcSet={`${secondImageMobile1} 1x, ${secondImageMobile2} 2x`}
+              media="(min-width:428px)"
+            />
+            <img src={secondImageMobile2} loading="lazy" alt="Girl"></img>
+          </picture>
+        </CenterImageWrapper>
+
+        <ThirdImageWrapper>
+          <picture>
+            <source
+              srcSet={`${thirdImageDesctop1} 1x, ${thirdImageDesctop2} 2x`}
+              media="(min-width:1464px)"
+            />
+            <source
+              srcSet={`${thirdImageMobile1} 1x, ${thirdImageMobile2} 2x`}
+              media="(min-width:428px)"
+            />
+            <img src={thirdImageMobile2} loading="lazy" alt="Girl"></img>
+          </picture>
+        </ThirdImageWrapper>
+      </ImagesWrapper>
+
       <Text>
         Hi! My name’s [Insert Name], and I founded [Insert] in ____. Lorem ipsum
         dolor sit amet, consectetur adipiscing elit. Fusce lobortis sapien

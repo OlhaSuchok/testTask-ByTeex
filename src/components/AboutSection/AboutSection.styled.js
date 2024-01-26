@@ -25,7 +25,40 @@ export const Title = styled.h2`
   }
 `;
 
-export const Text = styled.p`
+export const ImagesWrapper = styled.div`
+  position: relative;
+  width: 344px;
+  height: 362px;
+
+  margin-bottom: 50px;
+  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+  }
+`;
+
+export const FirstImageWrapper = styled.div`
+  position: relative;
+  z-index: 1;
+  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+  }
+`;
+
+export const CenterImageWrapper = styled.div`
+  position: relative;
+  top: -70px;
+  left: 50px;
+  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+  }
+`;
+
+export const ThirdImageWrapper = styled.div`
+  position: relative;
+  top: -140px;
+  left: 220px;
+  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+  }
+`;
+
+export const Text = styled.div`
   margin-top: 0;
   margin-bottom: 0;
 

@@ -1,4 +1,4 @@
-import Logo from "images/Logo/Logo";
+import Logo from "images/icons/Logo/Logo";
 import GalleryList from "./GalleryList/GalleryList";
 import Sun from "images/HeroIcons/Sun/Sun";
 import Basket from "images/HeroIcons/Basket/Basket";

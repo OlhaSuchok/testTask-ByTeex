@@ -5,7 +5,6 @@ export const RatingBlockWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
   }
 `;
@@ -15,6 +14,8 @@ export const RatingWrapper = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
+
+  padding-top: 10px;
 
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
   }

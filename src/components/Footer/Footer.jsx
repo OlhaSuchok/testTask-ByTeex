@@ -1,5 +1,10 @@
 import RatingBlock from "components/common/RatingBlock/RatingBlock";
 
+import Clock from "images/footer/Clock/Clock";
+import Car from "images/footer/Car/Car";
+import Basket from "images/footer/Basket/Basket";
+import Safe from "images/footer/Safe/Safe";
+
 import firstImageDesctop1 from "../../images/pictures/footerSection/1image1x@-1464.jpg";
 import firstImageDesctop2 from "../../images/pictures/footerSection/1image2x@-1464.jpg";
 
@@ -30,6 +35,12 @@ import {
   SecondTransparentBlock,
   SideImage,
   CenterImage,
+  LinksTextWrapper,
+  LinksText,
+  InfoList,
+  InfoItem,
+  InfoIconWrapper,
+  InfoMainText,
 } from "./Footer.styled";
 
 export default function Footer() {
@@ -51,8 +62,6 @@ export default function Footer() {
             src={thirdImageMobile2}
             loading="lazy"
             alt="Girl"
-            // width={"100px"}
-            // height={"150px"}
           ></SideImage>
         </FirstImageWrapper>
 
@@ -69,8 +78,6 @@ export default function Footer() {
             src={secondImageMobile2}
             loading="lazy"
             alt="Girl"
-            // width={"140px"}
-            // height={"211px"}
           ></CenterImage>
         </SecondImageWrapper>
 
@@ -87,8 +94,6 @@ export default function Footer() {
             src={firstImageMobile2}
             loading="lazy"
             alt="Girl"
-            // width={"100px"}
-            // height={"150px"}
           ></SideImage>
         </ThirdImageWrapper>
 
@@ -96,6 +101,34 @@ export default function Footer() {
         <SecondTransparentBlock></SecondTransparentBlock>
       </ImagesGroup>
       <RatingBlock test={"Over 500+ 5 Star Reviews Online"} />
+      <LinksTextWrapper>
+        <Clock />
+        <LinksText>Ships in 1-2 Days</LinksText>
+      </LinksTextWrapper>
+      <InfoList>
+        <InfoList>
+          <InfoItem>
+            <InfoIconWrapper>
+              <Car />
+            </InfoIconWrapper>
+            <InfoMainText>FREE Shipping on Orders over $200</InfoMainText>
+          </InfoItem>
+
+          <InfoItem>
+            <InfoIconWrapper>
+              <Safe />
+            </InfoIconWrapper>
+            <InfoMainText>Over 500+ 5 Star Reviews Online</InfoMainText>
+          </InfoItem>
+
+          <InfoItem>
+            <InfoIconWrapper>
+              <Basket />
+            </InfoIconWrapper>
+            <InfoMainText>Made ethically and responsibly.</InfoMainText>
+          </InfoItem>
+        </InfoList>
+      </InfoList>
     </Container>
   );
 }

@@ -8,6 +8,8 @@ export const StarListWrapper = styled.ul`
 
   padding-left: 0;
 
+  margin: 0;
+
   &:not(:last-child) {
     margin-right: 3px;
   }

@@ -161,3 +161,87 @@ export const CenterImage = styled.img`
     height: 373px;
   }
 `;
+
+export const LinksText = styled.p`
+  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+    font-size: 10px;
+    font-family: ${({ theme }) => theme.fonts.suisseRegular};
+    line-height: 1.7;
+
+    color: #1fad40;
+
+    margin: 0;
+  }
+`;
+
+export const LinksTextWrapper = styled.div`
+  display: none;
+
+  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 30px;
+  }
+`;
+
+export const InfoList = styled.ul`
+  display: none;
+
+  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+  }
+`;
+
+export const InfoItem = styled.li`
+  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+
+    height: 50px;
+
+    &:not(:first-child) {
+      padding-left: 15px;
+    }
+
+    &:not(:last-child) {
+      border-right: 1px solid #c4c4c4;
+      padding-right: 15px;
+    }
+  }
+`;
+
+export const InfoIconWrapper = styled.div`
+  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+  }
+`;
+
+export const InfoMainText = styled.p`
+  margin: 0;
+  font-size: 14px;
+  font-family: ${({ theme }) => theme.fonts.sofiaProRegular};
+  line-height: 1.4;
+
+  margin-left: 10px;
+
+  width: 120px;
+  color: #676869;
+
+  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+  }
+`;

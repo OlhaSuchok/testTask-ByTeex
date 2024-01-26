@@ -276,3 +276,34 @@ export const RatingBlockWrapper = styled.div`
     display: none;
   }
 `;
+
+export const ArrowLeftButton = styled.button`
+  display: none;
+  cursor: pointer;
+  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+    display: block;
+    background-color: transparent;
+    border: none;
+    margin-right: 20px;
+  }
+`;
+
+export const ArrowRightButton = styled.button`
+  display: none;
+  cursor: pointer;
+  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+    display: block;
+    background-color: transparent;
+    border: none;
+    margin-left: 20px;
+  }
+`;
+
+export const SliderArrowWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+  }
+`;

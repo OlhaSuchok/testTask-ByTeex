@@ -3,6 +3,8 @@ import Sun from "images/heroIcons/Sun/Sun";
 import Wave from "images/heroIcons/Wave/Wave";
 import Cloud from "images/heroIcons/Cloud/Cloud";
 import Leaf from "images/heroIcons/Leaf/Leaf";
+import ArrowLeft from "images/contentIcons/ArrowLeft/ArrowLeft";
+import ArrowRight from "images/contentIcons/ArrowRight/ArrowRight";
 
 import RatingBlock from "components/common/RatingBlock/RatingBlock";
 
@@ -25,6 +27,9 @@ import {
   DescribeNamesWrapper,
   ListBenefitsBlockWrapper,
   RatingBlockWrapper,
+  SliderArrowWrapper,
+  ArrowLeftButton,
+  ArrowRightButton,
 } from "./DescribeSection.styled";
 
 export default function DescribeSection() {
@@ -50,7 +55,15 @@ export default function DescribeSection() {
       <DescribeTextWrapper>
         <Title>Loungewear you can be proud of.</Title>
         <SliderWrapper>
-          <Slider></Slider>
+          <SliderArrowWrapper>
+            <ArrowLeftButton>
+              <ArrowLeft />
+            </ArrowLeftButton>
+            <Slider></Slider>
+            <ArrowRightButton>
+              <ArrowRight />
+            </ArrowRightButton>
+          </SliderArrowWrapper>
           <SliderName>Slider name</SliderName>
         </SliderWrapper>
 

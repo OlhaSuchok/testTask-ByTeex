@@ -1,5 +1,7 @@
 import RatingBlock from "components/common/RatingBlock/RatingBlock";
 import StarList from "components/common/StarList/StarList";
+import ArrowLeft from "images/contentIcons/ArrowLeft/ArrowLeft";
+import ArrowRight from "images/contentIcons/ArrowRight/ArrowRight";
 
 import firstImageMobile2 from "../../images/pictures/contentSection/image1-2x@-428.jpg";
 import firstImageDesctop1 from "../../images/pictures/contentSection/image1-1x@-1464.jpg";
@@ -33,6 +35,7 @@ import {
   ListPhoto,
   ListPhotoItem,
   ListPhotoItemImage,
+  Image,
   CardList,
   CardListItem,
   CardListItemIcon,
@@ -40,6 +43,9 @@ import {
   CardListItemText,
   CardListAvatarWrapper,
   StarListNameWrapper,
+  SliderWrapper,
+  ArrowLeftButton,
+  ArrowRightButton,
 } from "./ContentSection.styled";
 
 export default function ContentSection() {
@@ -62,12 +68,7 @@ export default function ContentSection() {
               srcSet={`${firstImageDesctop1} 1x, ${firstImageDesctop2} 2x`}
               media="(min-width:428px)"
             />
-            <img
-              src={firstImageMobile2}
-              loading="lazy"
-              alt="Girl"
-              width={"100px"}
-            ></img>
+            <Image src={firstImageMobile2} loading="lazy" alt="Girl"></Image>
           </ListPhotoItemImage>
         </ListPhotoItem>
 
@@ -81,12 +82,7 @@ export default function ContentSection() {
               srcSet={`${secondImageDesctop1} 1x, ${secondImageDesctop2} 2x`}
               media="(min-width:428px)"
             />
-            <img
-              src={secondImageMobile2}
-              loading="lazy"
-              alt="Girl"
-              width={"100px"}
-            ></img>
+            <Image src={secondImageMobile2} loading="lazy" alt="Girl"></Image>
           </ListPhotoItemImage>
         </ListPhotoItem>
 
@@ -100,12 +96,7 @@ export default function ContentSection() {
               srcSet={`${thirdImageDesctop1} 1x, ${thirdImageDesctop2} 2x`}
               media="(min-width:428px)"
             />
-            <img
-              src={thirdImageMobile2}
-              loading="lazy"
-              alt="Girl"
-              width={"100px"}
-            ></img>
+            <Image src={thirdImageMobile2} loading="lazy" alt="Girl"></Image>
           </ListPhotoItemImage>
         </ListPhotoItem>
 
@@ -119,12 +110,7 @@ export default function ContentSection() {
               srcSet={`${fourthImageDesctop1} 1x, ${fourthImageDesctop2} 2x`}
               media="(min-width:428px)"
             />
-            <img
-              src={fourthImageMobile2}
-              loading="lazy"
-              alt="Girl"
-              width={"100px"}
-            ></img>
+            <Image src={fourthImageMobile2} loading="lazy" alt="Girl"></Image>
           </ListPhotoItemImage>
         </ListPhotoItem>
 
@@ -138,12 +124,7 @@ export default function ContentSection() {
               srcSet={`${fifthImageDesctop1} 1x, ${fifthImageDesctop2} 2x`}
               media="(min-width:428px)"
             />
-            <img
-              src={fifthImageMobile2}
-              loading="lazy"
-              alt="Girl"
-              width={"100px"}
-            ></img>
+            <Image src={fifthImageMobile2} loading="lazy" alt="Girl"></Image>
           </ListPhotoItemImage>
         </ListPhotoItem>
 
@@ -157,12 +138,7 @@ export default function ContentSection() {
               srcSet={`${sixthImageDesctop1} 1x, ${sixthImageDesctop2} 2x`}
               media="(min-width:428px)"
             />
-            <img
-              src={sixthImageMobile2}
-              loading="lazy"
-              alt="Girl"
-              width={"100px"}
-            ></img>
+            <Image src={sixthImageMobile2} loading="lazy" alt="Girl"></Image>
           </ListPhotoItemImage>
         </ListPhotoItem>
 
@@ -176,12 +152,7 @@ export default function ContentSection() {
               srcSet={`${seventhImageDesctop1} 1x, ${seventhImageDesctop2} 2x`}
               media="(min-width:428px)"
             />
-            <img
-              src={seventhImageMobile2}
-              loading="lazy"
-              alt="Girl"
-              width={"100px"}
-            ></img>
+            <Image src={seventhImageMobile2} loading="lazy" alt="Girl"></Image>
           </ListPhotoItemImage>
         </ListPhotoItem>
 
@@ -195,63 +166,66 @@ export default function ContentSection() {
               srcSet={`${eighthImageDesctop1} 1x, ${eighthImageDesctop2} 2x`}
               media="(min-width:428px)"
             />
-            <img
-              src={eighthImageMobile2}
-              loading="lazy"
-              alt="Girl"
-              width={"100px"}
-            ></img>
+            <Image src={eighthImageMobile2} loading="lazy" alt="Girl"></Image>
           </ListPhotoItemImage>
         </ListPhotoItem>
       </ListPhoto>
 
-      <CardList>
-        <CardListItem>
-          <CardListAvatarWrapper>
-            <CardListItemIcon></CardListItemIcon>
-            <StarListNameWrapper>
-              <StarList />
-              <CardListItemMainText>Jane, S.</CardListItemMainText>
-            </StarListNameWrapper>
-          </CardListAvatarWrapper>
-          <CardListItemText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Pellentesque sed sollicitudin dolor, non sodales justo. Aenean eget
-            aliquet mi.
-          </CardListItemText>
-        </CardListItem>
+      <SliderWrapper>
+        <ArrowLeftButton>
+          <ArrowLeft />
+        </ArrowLeftButton>
+        <CardList>
+          <CardListItem>
+            <CardListAvatarWrapper>
+              <CardListItemIcon></CardListItemIcon>
+              <StarListNameWrapper>
+                <StarList />
+                <CardListItemMainText>Jane, S.</CardListItemMainText>
+              </StarListNameWrapper>
+            </CardListAvatarWrapper>
+            <CardListItemText>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Pellentesque sed sollicitudin dolor, non sodales justo. Aenean
+              eget aliquet mi.
+            </CardListItemText>
+          </CardListItem>
 
-        <CardListItem>
-          <CardListAvatarWrapper>
-            <CardListItemIcon></CardListItemIcon>
-            <StarListNameWrapper>
-              <StarList />
-              <CardListItemMainText>Jane, S.</CardListItemMainText>
-            </StarListNameWrapper>
-          </CardListAvatarWrapper>
-          <CardListItemText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Pellentesque sed sollicitudin dolor, non sodales justo. Aenean eget
-            aliquet mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Pellentesque sed sollicitudin dolor, non sodales.
-          </CardListItemText>
-        </CardListItem>
+          <CardListItem>
+            <CardListAvatarWrapper>
+              <CardListItemIcon></CardListItemIcon>
+              <StarListNameWrapper>
+                <StarList />
+                <CardListItemMainText>Jane, S.</CardListItemMainText>
+              </StarListNameWrapper>
+            </CardListAvatarWrapper>
+            <CardListItemText>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Pellentesque sed sollicitudin dolor, non sodales justo. Aenean
+              eget aliquet mi. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Pellentesque sed sollicitudin dolor, non sodales.
+            </CardListItemText>
+          </CardListItem>
 
-        <CardListItem>
-          <CardListAvatarWrapper>
-            <CardListItemIcon></CardListItemIcon>
-            <StarListNameWrapper>
-              <StarList />
-              <CardListItemMainText>Jane, S.</CardListItemMainText>
-            </StarListNameWrapper>
-          </CardListAvatarWrapper>
-          <CardListItemText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Pellentesque sed sollicitudin dolor, non sodales justo. Aenean eget
-            aliquet mi.
-          </CardListItemText>
-        </CardListItem>
-      </CardList>
+          <CardListItem>
+            <CardListAvatarWrapper>
+              <CardListItemIcon></CardListItemIcon>
+              <StarListNameWrapper>
+                <StarList />
+                <CardListItemMainText>Jane, S.</CardListItemMainText>
+              </StarListNameWrapper>
+            </CardListAvatarWrapper>
+            <CardListItemText>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Pellentesque sed sollicitudin dolor, non sodales justo. Aenean
+              eget aliquet mi.
+            </CardListItemText>
+          </CardListItem>
+        </CardList>
+        <ArrowRightButton>
+          <ArrowRight />
+        </ArrowRightButton>
+      </SliderWrapper>
       <RatingBlock test={"Over 500+ 5 Star Reviews Online"} />
     </Section>
   );

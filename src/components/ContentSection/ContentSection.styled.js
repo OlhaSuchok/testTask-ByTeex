@@ -107,7 +107,7 @@ export const CardList = styled.ul`
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
     flex-direction: row;
     align-items: center;
-    margin-bottom: 56px;
+    margin-bottom: 0;
   }
 `;
 
@@ -195,5 +195,44 @@ export const StarListNameWrapper = styled.div`
   align-items: flex-start;
 
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+  }
+`;
+
+export const ArrowLeftButton = styled.button`
+  display: none;
+  cursor: pointer;
+  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+    display: block;
+    background-color: transparent;
+    border: none;
+    margin-right: 20px;
+  }
+`;
+
+export const ArrowRightButton = styled.button`
+  display: none;
+  cursor: pointer;
+  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+    display: block;
+    background-color: transparent;
+    border: none;
+    margin-left: 20px;
+  }
+`;
+
+export const SliderWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 56px;
+  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+  }
+`;
+
+export const Image = styled.img`
+  width: 100px;
+  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+    width: 100px;
   }
 `;

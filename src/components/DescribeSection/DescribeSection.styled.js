@@ -42,7 +42,8 @@ export const ListNames = styled.ul`
 
   margin-top: 0;
   margin-bottom: 12px;
-  padding-left: 0;
+  padding-left: 10px;
+  padding-right: 10px;
 
   list-style: none;
 
@@ -52,7 +53,7 @@ export const ListNames = styled.ul`
 
 export const ListNamesItem = styled.li`
   &:not(:last-child) {
-    margin-right: 26px;
+    margin-right: 10px;
   }
 
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {

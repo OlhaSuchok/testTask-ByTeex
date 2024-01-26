@@ -37,27 +37,25 @@ export const Title = styled.h2`
 `;
 
 export const ImagesWrapper = styled.div`
-  /* position: relative; */
-  /* width: 344px; */
   height: 362px;
 
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
   }
 `;
 
 export const FirstImageWrapper = styled.div`
-  position: relative;
+  position: absolute;
   z-index: 1;
+  top: 80px;
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
   }
 `;
 
 export const CenterImageWrapper = styled.div`
-  position: relative;
-  top: -70px;
-  /* left: 50px; */
-  right: -40px;
+  position: absolute;
+  top: 110px;
+  left: 90px;
   margin-left: auto;
   margin-right: auto;
 
@@ -66,10 +64,9 @@ export const CenterImageWrapper = styled.div`
 `;
 
 export const ThirdImageWrapper = styled.div`
-  position: relative;
-  top: -140px;
-  /* left: 220px; */
-  /* right: 0; */
+  position: absolute;
+  top: 340px;
+  right: 60px;
   z-index: 1;
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
   }

@@ -1,6 +1,6 @@
 import Eco from "images/DescribeIcons/Eco/Eco";
-import Canadian from "images/DescribeIcons/Canadian/Canadian";
-import Jillians from "images/DescribeIcons/Jillians/Jillians";
+// import Canadian from "images/DescribeIcons/Canadian/Canadian";
+// import Jillians from "images/DescribeIcons/Jillians/Jillians";
 import Sun from "images/HeroIcons/Sun/Sun";
 import Wave from "images/HeroIcons/Wave/Wave";
 import Cloud from "images/HeroIcons/Cloud/Cloud";

@@ -14,6 +14,7 @@ import {
   ListNamesItem,
   Pagination,
   Title,
+  Slider,
   SliderWrapper,
   SliderName,
   ListBenefits,
@@ -21,80 +22,102 @@ import {
   ListBenefitsIconWrapper,
   ListBenefitsMainText,
   ListBenefitsText,
+  DescribeTextWrapper,
+  DescribeNamesWrapper,
+  ListBenefitsBlockWrapper,
+  RatingBlockWrapper,
 } from "./DescribeSection.styled";
 
 export default function DescribeSection() {
   return (
     <Section>
-      <DescribeText>as seen in</DescribeText>
-      <ListNames>
-        <ListNamesItem>
-          <Eco />
-        </ListNamesItem>
-        <ListNamesItem>
-          <Eco />
-        </ListNamesItem>
-        <ListNamesItem>
-          <Eco />
-        </ListNamesItem>
-      </ListNames>
+      <DescribeNamesWrapper>
+        <DescribeText>as seen in</DescribeText>
+        <ListNames>
+          <ListNamesItem>
+            <Eco />
+          </ListNamesItem>
+          <ListNamesItem>
+            <Eco />
+          </ListNamesItem>
+          <ListNamesItem>
+            <Eco />
+          </ListNamesItem>
+        </ListNames>
+      </DescribeNamesWrapper>
 
       <Pagination>pagination</Pagination>
-      <Title>Loungewear you can be proud of.</Title>
-      <SliderWrapper>
-        <div>Slider</div>
-        <SliderName>Slider name</SliderName>
-      </SliderWrapper>
-      <ListBenefits>
-        <ListBenefitsItem>
-          <ListBenefitsIconWrapper>
-            <Cloud />
-          </ListBenefitsIconWrapper>
-          <ListBenefitsMainText>Ethically sourced.</ListBenefitsMainText>
-          <ListBenefitsText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-            lobortis sapien facilisis tincidunt pellentesque. In eget ipsum et
-            felis finibus consequat.
-          </ListBenefitsText>
-        </ListBenefitsItem>
 
-        <ListBenefitsItem>
-          <ListBenefitsIconWrapper>
-            <Sun />
-          </ListBenefitsIconWrapper>
-          <ListBenefitsMainText>Responsibly made.</ListBenefitsMainText>
-          <ListBenefitsText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-            lobortis sapien facilisis tincidunt pellentesque. In eget ipsum et
-            felis finibus consequat.
-          </ListBenefitsText>
-        </ListBenefitsItem>
+      <DescribeTextWrapper>
+        <Title>Loungewear you can be proud of.</Title>
+        <SliderWrapper>
+          <Slider></Slider>
+          <SliderName>Slider name</SliderName>
+        </SliderWrapper>
 
-        <ListBenefitsItem>
-          <ListBenefitsIconWrapper>
-            <Leaf />
-          </ListBenefitsIconWrapper>
-          <ListBenefitsMainText>Made for living in.</ListBenefitsMainText>
-          <ListBenefitsText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-            lobortis sapien facilisis tincidunt pellentesque. In eget ipsum et
-            felis finibus consequat.
-          </ListBenefitsText>
-        </ListBenefitsItem>
+        <ListBenefits>
+          <ListBenefitsItem>
+            <ListBenefitsBlockWrapper>
+              <ListBenefitsIconWrapper>
+                <Sun />
+              </ListBenefitsIconWrapper>
+              <ListBenefitsMainText>Ethically sourced.</ListBenefitsMainText>
+            </ListBenefitsBlockWrapper>
+            <ListBenefitsText>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+              lobortis sapien facilisis tincidunt pellentesque. In eget ipsum et
+              felis finibus consequat.
+            </ListBenefitsText>
+          </ListBenefitsItem>
 
-        <ListBenefitsItem>
-          <ListBenefitsIconWrapper>
-            <Wave />
-          </ListBenefitsIconWrapper>
-          <ListBenefitsMainText>Unimaginably comfortable.</ListBenefitsMainText>
-          <ListBenefitsText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-            lobortis sapien facilisis tincidunt pellentesque. In eget ipsum et
-            felis finibus consequat.
-          </ListBenefitsText>
-        </ListBenefitsItem>
-      </ListBenefits>
-      <RatingBlock test={"Over 500+ 5 Star Reviews Online"} />
+          <ListBenefitsItem>
+            <ListBenefitsBlockWrapper>
+              <ListBenefitsIconWrapper>
+                <Cloud />
+              </ListBenefitsIconWrapper>
+              <ListBenefitsMainText>Responsibly made.</ListBenefitsMainText>
+            </ListBenefitsBlockWrapper>
+            <ListBenefitsText>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+              lobortis sapien facilisis tincidunt pellentesque. In eget ipsum et
+              felis finibus consequat.
+            </ListBenefitsText>
+          </ListBenefitsItem>
+
+          <ListBenefitsItem>
+            <ListBenefitsBlockWrapper>
+              <ListBenefitsIconWrapper>
+                <Wave />
+              </ListBenefitsIconWrapper>
+              <ListBenefitsMainText>Made for living in.</ListBenefitsMainText>
+            </ListBenefitsBlockWrapper>
+            <ListBenefitsText>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+              lobortis sapien facilisis tincidunt pellentesque. In eget ipsum et
+              felis finibus consequat.
+            </ListBenefitsText>
+          </ListBenefitsItem>
+
+          <ListBenefitsItem>
+            <ListBenefitsBlockWrapper>
+              <ListBenefitsIconWrapper>
+                <Leaf />
+              </ListBenefitsIconWrapper>
+              <ListBenefitsMainText>
+                Unimaginably comfortable.
+              </ListBenefitsMainText>
+            </ListBenefitsBlockWrapper>
+            <ListBenefitsText>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+              lobortis sapien facilisis tincidunt pellentesque. In eget ipsum et
+              felis finibus consequat.
+            </ListBenefitsText>
+          </ListBenefitsItem>
+        </ListBenefits>
+      </DescribeTextWrapper>
+      <RatingBlockWrapper>
+        <RatingBlock test={"Over 500+ 5 Star Reviews Online"} />
+      </RatingBlockWrapper>
     </Section>
   );
 }

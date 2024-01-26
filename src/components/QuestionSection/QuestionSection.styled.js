@@ -4,8 +4,9 @@ export const Section = styled.section`
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding-bottom: 40px;
   align-items: center;
+
+  padding-bottom: 40px;
 
   margin-left: auto;
   margin-right: auto;
@@ -13,6 +14,7 @@ export const Section = styled.section`
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.mobile}) {
     width: ${({ theme }) => theme.breakpoints.mobile};
   }
+
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
     width: ${({ theme }) => theme.breakpoints.desktop};
     flex-direction: row;
@@ -27,6 +29,7 @@ export const Section = styled.section`
 
 export const Title = styled.h2`
   text-align: center;
+
   margin-top: 0;
   margin-bottom: 25px;
 
@@ -35,9 +38,6 @@ export const Title = styled.h2`
   line-height: 1.3;
 
   color: ${({ theme }) => theme.colors.MAIN_ACCENT_TEXT_COLOR};
-
-  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
-  }
 `;
 
 export const QuestionList = styled.ul`
@@ -66,25 +66,22 @@ export const QuestionListItem = styled.li`
   align-items: center;
 
   width: 100%;
+
   padding-top: 22px;
-  border-bottom: 1px solid #c4c4c4;
 
   position: relative;
   overflow: hidden;
 
-  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
-  }
+  border-bottom: 1px solid #c4c4c4;
 `;
 
 export const Button = styled.button`
   display: block;
   justify-content: center;
   align-items: center;
+
   border: none;
   background-color: transparent;
-
-  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
-  }
 `;
 
 export const QuestionListItemText = styled.p`
@@ -96,22 +93,14 @@ export const QuestionListItemText = styled.p`
   line-height: 1.3;
 
   color: ${({ theme }) => theme.colors.MAIN_ACCENT_TEXT_COLOR};
-  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
-  }
 `;
 
-export const QuestionListItemPlusWrapper = styled.div`
-  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
-  }
-`;
+export const QuestionListItemPlusWrapper = styled.div``;
 
 export const QuestionListWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-
-  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
-  }
 `;
 
 export const RatingBlockWrapper = styled.div`
@@ -134,17 +123,11 @@ export const ImagesBlockWrapper = styled.div`
   }
 `;
 
-export const ImagesGroup = styled.div`
-  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
-  }
-`;
+export const ImagesGroup = styled.div``;
 
 export const FirstImageWrapper = styled.div`
   position: absolute;
   right: 30px;
-
-  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
-  }
 `;
 
 export const SecondImageWrapper = styled.div`
@@ -153,16 +136,12 @@ export const SecondImageWrapper = styled.div`
   left: 90px;
 
   z-index: 1;
-  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
-  }
 `;
 
 export const ThirdImageWrapper = styled.div`
   position: absolute;
   top: 435px;
   left: 5px;
-  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
-  }
 `;
 
 export const FirstTransparentBlock = styled.div`
@@ -175,9 +154,6 @@ export const FirstTransparentBlock = styled.div`
 
   background: #f9f0e5;
   background: linear-gradient(to top, #f9f0e5 0%, #ffffff 90%);
-
-  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
-  }
 `;
 
 export const SecondTransparentBlock = styled.div`
@@ -188,25 +164,18 @@ export const SecondTransparentBlock = styled.div`
   width: 134px;
   height: 189px;
 
-  background: #f9f0e5;
   background: linear-gradient(to top, #f9f0e5 0%, #ffffff 90%);
-
-  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
-  }
 `;
 
 export const QuestionListItemResponse = styled.p`
+  margin: 0;
+  padding-bottom: 20px;
+
   font-size: 15px;
   font-family: ${({ theme }) => theme.fonts.sofiaProRegular};
   line-height: 1.5;
 
   color: #676869;
-
-  margin: 0;
-  padding-bottom: 20px;
-
-  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
-  }
 `;
 
 export const QuestionListItemQuestion = styled.div`
@@ -218,7 +187,4 @@ export const QuestionListItemQuestion = styled.div`
 
   padding-top: 22px;
   padding-bottom: 22px;
-
-  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
-  }
 `;

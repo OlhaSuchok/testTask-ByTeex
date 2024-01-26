@@ -12,7 +12,6 @@ export const Container = styled.footer`
   margin-left: auto;
   margin-right: auto;
 
-  background: #f9f0e5;
   background: linear-gradient(to top, #f9f0e5 0%, #ffffff 90%);
 
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.mobile}) {
@@ -33,9 +32,6 @@ export const Title = styled.h2`
   line-height: 1.6;
 
   color: ${({ theme }) => theme.colors.MAIN_ACCENT_TEXT_COLOR};
-
-  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
-  }
 `;
 
 export const Text = styled.p`
@@ -48,9 +44,6 @@ export const Text = styled.p`
   line-height: 1.6;
 
   color: ${({ theme }) => theme.colors.MAIN_TEXT_COLOR};
-
-  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
-  }
 `;
 
 export const ImagesGroup = styled.div`
@@ -83,6 +76,7 @@ export const SecondImageWrapper = styled.div`
   left: 129px;
 
   z-index: 3;
+
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
     left: 280px;
   }
@@ -129,13 +123,11 @@ export const SecondTransparentBlock = styled.div`
   width: 67px;
   height: 95px;
 
-  background: #f9f0e5;
   background: linear-gradient(to top, #f9f0e5 0%, #ffffff 90%);
 
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
     width: 139px;
     height: 196px;
-    background: linear-gradient(to top, #f9f0e5 29%, #ffffff 100%);
 
     bottom: 140px;
     right: 30px;
@@ -164,13 +156,13 @@ export const CenterImage = styled.img`
 
 export const LinksText = styled.p`
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+    margin: 0;
+
     font-size: 10px;
     font-family: ${({ theme }) => theme.fonts.suisseRegular};
     line-height: 1.7;
 
     color: #1fad40;
-
-    margin: 0;
   }
 `;
 
@@ -193,14 +185,11 @@ export const InfoList = styled.ul`
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    align-items: center;
 
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 0;
 
-    justify-content: center;
     flex-direction: row;
     align-items: center;
   }
@@ -226,10 +215,7 @@ export const InfoItem = styled.li`
   }
 `;
 
-export const InfoIconWrapper = styled.div`
-  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
-  }
-`;
+export const InfoIconWrapper = styled.div``;
 
 export const InfoMainText = styled.p`
   margin: 0;
@@ -237,11 +223,8 @@ export const InfoMainText = styled.p`
   font-family: ${({ theme }) => theme.fonts.sofiaProRegular};
   line-height: 1.4;
 
+  width: 120px;
   margin-left: 10px;
 
-  width: 120px;
   color: #676869;
-
-  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
-  }
 `;

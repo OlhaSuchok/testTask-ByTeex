@@ -6,10 +6,7 @@ export const Section = styled.section`
   justify-content: center;
   align-items: center;
 
-  padding-top: 13px;
-  padding-bottom: 50px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 13px 20px 50px 20px;
 
   margin-left: auto;
   margin-right: auto;
@@ -20,19 +17,22 @@ export const Section = styled.section`
 
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
     position: relative;
-    padding-top: 33px;
-    padding-left: 100px;
-    padding-right: 70px;
-    width: ${({ theme }) => theme.breakpoints.desktop};
 
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+
+    padding-top: 33px;
+    padding-left: 100px;
+    padding-right: 70px;
+
+    width: ${({ theme }) => theme.breakpoints.desktop};
   }
 `;
 
 export const MainText = styled.h2`
   text-align: center;
+
   margin-top: 16px;
   margin-bottom: 17px;
 
@@ -45,6 +45,7 @@ export const MainText = styled.h2`
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
     text-align: left;
     margin-bottom: 50px;
+
     font-size: 38px;
 
     width: 500px;
@@ -80,9 +81,6 @@ export const DescriptionList = styled.ul`
   padding: 0;
   margin-top: 0;
   margin-bottom: 30px;
-
-  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
-  }
 `;
 
 export const DescriptionItem = styled.li`
@@ -91,9 +89,6 @@ export const DescriptionItem = styled.li`
 
   &:not(:last-child) {
     margin-bottom: 26px;
-  }
-
-  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
   }
 `;
 
@@ -113,9 +108,6 @@ export const DescriptionText = styled.p`
   line-height: 1.4;
 
   color: ${({ theme }) => theme.colors.MAIN_TEXT_COLOR};
-
-  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
-  }
 `;
 
 export const LogoTitleWrapper = styled.div`
@@ -125,17 +117,11 @@ export const LogoTitleWrapper = styled.div`
   align-items: center;
 
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: flex-start;
   }
 `;
 
-export const LogoWrapper = styled.div`
-  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
-  }
-`;
+export const LogoWrapper = styled.div``;
 
 export const ImagesGroup = styled.div`
   position: relative;
@@ -199,16 +185,16 @@ export const FirstTransparentBlock = styled.div`
   width: 67px;
   height: 95px;
 
-  background: #f9f0e5;
   background: linear-gradient(to top, #f9f0e5 0%, #ffffff 90%);
 
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
-    width: 139px;
-    height: 196px;
-    background: linear-gradient(to top, #f9f0e5 29%, #ffffff 100%);
-
     bottom: 140px;
     left: 20px;
+
+    width: 139px;
+    height: 196px;
+
+    background: linear-gradient(to top, #f9f0e5 29%, #ffffff 100%);
   }
 `;
 
@@ -220,13 +206,11 @@ export const SecondTransparentBlock = styled.div`
   width: 67px;
   height: 95px;
 
-  background: #f9f0e5;
   background: linear-gradient(to top, #f9f0e5 0%, #ffffff 90%);
 
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
     width: 139px;
     height: 196px;
-    background: linear-gradient(to top, #f9f0e5 29%, #ffffff 100%);
 
     bottom: 140px;
     right: 30px;

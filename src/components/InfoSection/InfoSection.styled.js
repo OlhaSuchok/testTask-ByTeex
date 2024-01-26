@@ -42,6 +42,7 @@ export const InfoList = styled.ul`
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
+
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
     justify-content: center;
     flex-direction: row;
@@ -82,8 +83,6 @@ export const InfoItem = styled.li`
 
 export const InfoIconWrapper = styled.div`
   margin-bottom: 10px;
-  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
-  }
 `;
 
 export const InfoMainText = styled.p`
@@ -95,9 +94,6 @@ export const InfoMainText = styled.p`
   line-height: 1;
 
   color: #2a2996;
-
-  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
-  }
 `;
 
 export const InfoText = styled.p`
@@ -107,7 +103,4 @@ export const InfoText = styled.p`
   line-height: 1.4;
 
   color: #2a2996;
-
-  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
-  }
 `;

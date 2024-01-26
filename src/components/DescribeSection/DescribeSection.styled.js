@@ -53,6 +53,8 @@ export const DescribeText = styled.p`
   margin-top: 0;
   margin-bottom: 16px;
 
+  padding-top: 30px;
+
   font-size: 15px;
   font-family: ${({ theme }) => theme.fonts.sofiaProRegular};
   line-height: 1.2;
@@ -227,7 +229,7 @@ export const ListBenefitsIconWrapper = styled.div`
   margin-bottom: 20px;
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
     margin-bottom: 0;
-    margin-right: 15px;
+    margin-right: 17px;
   }
 `;
 

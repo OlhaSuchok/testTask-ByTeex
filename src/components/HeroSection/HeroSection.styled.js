@@ -22,7 +22,7 @@ export const Section = styled.section`
     position: relative;
     padding-top: 33px;
     padding-left: 100px;
-    padding-right: 100px;
+    padding-right: 70px;
     width: ${({ theme }) => theme.breakpoints.desktop};
 
     flex-direction: column;
@@ -134,5 +134,121 @@ export const LogoTitleWrapper = styled.div`
 
 export const LogoWrapper = styled.div`
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+  }
+`;
+
+export const ImagesGroup = styled.div`
+  position: relative;
+
+  width: 400px;
+  height: 270px;
+
+  margin-bottom: 20px;
+
+  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+    position: absolute;
+    right: 100px;
+
+    width: 815px;
+    height: 460px;
+
+    margin-bottom: 0;
+  }
+`;
+
+export const FirstImageWrapper = styled.div`
+  position: absolute;
+  top: 50px;
+  right: 42px;
+
+  z-index: 2;
+
+  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+    right: 100px;
+  }
+`;
+
+export const SecondImageWrapper = styled.div`
+  position: absolute;
+  top: 20px;
+  left: 129px;
+
+  z-index: 3;
+  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+    left: 280px;
+  }
+`;
+
+export const ThirdImageWrapper = styled.div`
+  position: absolute;
+  top: 50px;
+  left: 36px;
+
+  z-index: 2;
+
+  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+    left: 84px;
+  }
+`;
+
+export const FirstTransparentBlock = styled.div`
+  position: absolute;
+  bottom: 110px;
+  left: 5px;
+
+  width: 67px;
+  height: 95px;
+
+  background: #f9f0e5;
+  background: linear-gradient(to top, #f9f0e5 0%, #ffffff 90%);
+
+  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+    width: 139px;
+    height: 196px;
+    background: linear-gradient(to top, #f9f0e5 29%, #ffffff 100%);
+
+    bottom: 140px;
+    left: 20px;
+  }
+`;
+
+export const SecondTransparentBlock = styled.div`
+  position: absolute;
+  bottom: 110px;
+  right: 5px;
+
+  width: 67px;
+  height: 95px;
+
+  background: #f9f0e5;
+  background: linear-gradient(to top, #f9f0e5 0%, #ffffff 90%);
+
+  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+    width: 139px;
+    height: 196px;
+    background: linear-gradient(to top, #f9f0e5 29%, #ffffff 100%);
+
+    bottom: 140px;
+    right: 30px;
+  }
+`;
+
+export const SideImage = styled.img`
+  width: 97px;
+  height: 145px;
+
+  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+    width: 210px;
+    height: 316px;
+  }
+`;
+
+export const CenterImage = styled.img`
+  width: 140px;
+  height: 210px;
+
+  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+    width: 246px;
+    height: 373px;
   }
 `;

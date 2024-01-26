@@ -72,6 +72,7 @@ export const InfoItem = styled.li`
 `;
 
 export const InfoIconWrapper = styled.div`
+  margin-bottom: 10px;
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
   }
 `;

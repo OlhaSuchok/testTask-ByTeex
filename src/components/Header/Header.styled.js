@@ -1,6 +1,10 @@
 import styled from "@emotion/styled";
 
 export const Container = styled.header`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   height: 36px;
   background-color: ${({ theme }) => theme.colors.ACCENT_COLOR};
 
@@ -16,8 +20,9 @@ export const Container = styled.header`
 `;
 
 export const Text = styled.p`
-  text-align: center;
-  margin: 0;
+  /* text-align: center; */
+  margin-right: 8px;
+  margin-left: 8px;
 
   font-size: 11px;
   font-family: ${({ theme }) => theme.fonts.suisseRegular};
@@ -26,5 +31,20 @@ export const Text = styled.p`
   color: ${({ theme }) => theme.colors.HEADER_TEXT_COLOR};
 
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+  }
+`;
+
+export const TextDesctop = styled.p`
+  display: none;
+
+  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+    display: block;
+    margin: 0;
+
+    font-size: 11px;
+    font-family: ${({ theme }) => theme.fonts.suisseRegular};
+    line-height: 35px;
+    color: ${({ theme }) => theme.colors.HEADER_TEXT_COLOR};
+    overflow: visible;
   }
 `;

@@ -17,8 +17,17 @@ export const Section = styled.section`
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.mobile}) {
     width: ${({ theme }) => theme.breakpoints.mobile};
   }
+
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+    position: relative;
+    padding-top: 33px;
+    padding-left: 100px;
+    padding-right: 100px;
     width: ${({ theme }) => theme.breakpoints.desktop};
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
   }
 `;
 
@@ -34,6 +43,29 @@ export const MainText = styled.h2`
   color: ${({ theme }) => theme.colors.MAIN_ACCENT_TEXT_COLOR};
 
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+    text-align: left;
+    margin-bottom: 50px;
+    font-size: 38px;
+
+    width: 500px;
+  }
+`;
+
+export const Gallery = styled.div`
+  width: 400px;
+  height: 200px;
+
+  background-color: beige;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+    position: absolute;
+    right: 100px;
+
+    width: 600px;
+    height: 300px;
+
+    margin-bottom: 0;
   }
 `;
 
@@ -82,6 +114,25 @@ export const DescriptionText = styled.p`
 
   color: ${({ theme }) => theme.colors.MAIN_TEXT_COLOR};
 
+  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+  }
+`;
+
+export const LogoTitleWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+`;
+
+export const LogoWrapper = styled.div`
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
   }
 `;

@@ -1,5 +1,5 @@
 import Logo from "images/icons/Logo/Logo";
-import GalleryList from "./GalleryList/GalleryList";
+// import GalleryList from "./GalleryList/GalleryList";
 import Sun from "images/HeroIcons/Sun/Sun";
 import Basket from "images/HeroIcons/Basket/Basket";
 import Wave from "images/HeroIcons/Wave/Wave";
@@ -12,14 +12,22 @@ import {
   DescriptionItem,
   DescriptionIconWrapper,
   DescriptionText,
+  LogoTitleWrapper,
+  LogoWrapper,
+  Gallery,
 } from "./HeroSection.styled";
 
 export default function HeroSection() {
   return (
     <Section>
-      <Logo />
-      <MainText>Don’t apologize for being comfortable.</MainText>
-      <GalleryList />
+      <LogoTitleWrapper>
+        <LogoWrapper>
+          <Logo />
+        </LogoWrapper>
+        <MainText>Don’t apologize for being comfortable.</MainText>
+      </LogoTitleWrapper>
+      <Gallery></Gallery>
+      {/* <GalleryList /> */}
       {/* <ImageSlider /> */}
       <DescriptionList>
         <DescriptionItem>

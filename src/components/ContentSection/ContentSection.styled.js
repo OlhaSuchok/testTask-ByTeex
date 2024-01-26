@@ -7,6 +7,15 @@ export const Section = styled.section`
   align-items: center;
 
   padding-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    width: ${({ theme }) => theme.breakpoints.mobile};
+  }
+  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+    width: ${({ theme }) => theme.breakpoints.desktop};
+  }
 `;
 
 export const Title = styled.h2`

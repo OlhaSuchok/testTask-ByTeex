@@ -4,7 +4,14 @@ export const Container = styled.header`
   height: 36px;
   background-color: ${({ theme }) => theme.colors.ACCENT_COLOR};
 
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    width: ${({ theme }) => theme.breakpoints.mobile};
+  }
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+    width: ${({ theme }) => theme.breakpoints.desktop};
   }
 `;
 

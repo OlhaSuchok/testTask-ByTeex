@@ -3,7 +3,18 @@ import styled from "@emotion/styled";
 export const Section = styled.section`
   padding-top: 52px;
   padding-bottom: 56px;
+
+  margin-left: auto;
+  margin-right: auto;
+
   background-color: ${({ theme }) => theme.colors.ACCENT_BACKGROUND_COLOR};
+
+  @media screen and (min-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    width: ${({ theme }) => theme.breakpoints.mobile};
+  }
+  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+    width: ${({ theme }) => theme.breakpoints.desktop};
+  }
 `;
 
 export const Title = styled.h2`

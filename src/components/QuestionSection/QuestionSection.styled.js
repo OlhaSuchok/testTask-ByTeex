@@ -6,6 +6,16 @@ export const Section = styled.section`
   flex-direction: column;
   padding-bottom: 52px;
   align-items: center;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    width: ${({ theme }) => theme.breakpoints.mobile};
+  }
+  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+    width: ${({ theme }) => theme.breakpoints.desktop};
+  }
 `;
 
 export const Title = styled.h2`

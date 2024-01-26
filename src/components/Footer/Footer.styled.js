@@ -8,6 +8,16 @@ export const Container = styled.footer`
 
   padding-top: 52px;
   padding-bottom: 70px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    width: ${({ theme }) => theme.breakpoints.mobile};
+  }
+  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+    width: ${({ theme }) => theme.breakpoints.desktop};
+  }
 `;
 
 export const Title = styled.h2`

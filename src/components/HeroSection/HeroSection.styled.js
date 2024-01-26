@@ -10,6 +10,16 @@ export const Section = styled.section`
   padding-bottom: 50px;
   padding-left: 20px;
   padding-right: 20px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    width: ${({ theme }) => theme.breakpoints.mobile};
+  }
+  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+    width: ${({ theme }) => theme.breakpoints.desktop};
+  }
 `;
 
 export const MainText = styled.h2`

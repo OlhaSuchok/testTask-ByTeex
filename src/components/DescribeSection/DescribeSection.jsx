@@ -32,10 +32,10 @@ export default function DescribeSection() {
           <Eco />
         </ListNamesItem>
         <ListNamesItem>
-          <Canadian />
+          <Eco />
         </ListNamesItem>
         <ListNamesItem>
-          <Jillians />
+          <Eco />
         </ListNamesItem>
       </ListNames>
 

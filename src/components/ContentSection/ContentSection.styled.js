@@ -42,17 +42,21 @@ export const Text = styled.p`
 `;
 
 export const ListPhoto = styled.ul`
-  /* display: flex;
-  flex-wrap: wrap; */
-  display: grid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 
-  grid-template-rows: repeat(2, [row-start] 3fr [row-end]);
-  grid-template-columns: repeat(4, [col-start] 3fr [col-end]);
+  /* display: grid; */
+  /* grid-template-rows: repeat(2, [row-start] 3fr [row-end]);
+  grid-template-columns: repeat(4, [col-start] 3fr [col-end]); */
 
   margin-right: 0;
   margin-top: 0;
 
   list-style: none;
+
+  width: 428px;
 
   padding: 0;
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
@@ -60,17 +64,17 @@ export const ListPhoto = styled.ul`
 `;
 
 export const ListPhotoItem = styled.li`
-  /* width: calc((100% - 3px) / 3); */
   width: 100px;
+  margin: 2px;
 
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
   }
 `;
 
-export const ListPhotoItemImage = styled.img`
-  display: block;
-  max-width: 100%;
-  height: auto;
+export const ListPhotoItemImage = styled.picture`
+  /* display: block; */
+  /* width: 100px;
+  height: auto; */
 
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
   }

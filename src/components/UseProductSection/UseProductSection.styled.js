@@ -22,7 +22,7 @@ export const Section = styled.section`
     padding-left: 170px;
     padding-right: 170px;
     padding-top: 75px;
-    padding-bottom: 75px;
+    padding-bottom: 40px;
   }
 `;
 

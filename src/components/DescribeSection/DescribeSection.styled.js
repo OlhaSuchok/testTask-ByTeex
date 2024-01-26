@@ -205,7 +205,9 @@ export const ListBenefitsItem = styled.li`
     width: 600px;
     padding-top: 0;
 
-    border-bottom: none;
+    &:not(:last-child) {
+      border-bottom: 1px solid transparent;
+    }
 
     align-items: flex-start;
     align-self: flex-start;

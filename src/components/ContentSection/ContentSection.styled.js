@@ -17,7 +17,7 @@ export const Section = styled.section`
     width: ${({ theme }) => theme.breakpoints.desktop};
     padding-left: 100px;
     padding-right: 100px;
-    padding-bottom: 70px;
+    padding-bottom: 50px;
   }
 `;
 

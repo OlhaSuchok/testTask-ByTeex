@@ -29,6 +29,7 @@ export const Title = styled.h2`
   color: #2a2996;
 
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+    margin-bottom: 30px;
   }
 `;
 
@@ -42,6 +43,9 @@ export const InfoList = styled.ul`
   margin-bottom: 0;
   padding-left: 0;
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
   }
 `;
 
@@ -59,6 +63,11 @@ export const InfoItem = styled.li`
   border-bottom: 1px solid #c4c4c4;
 
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+    border-bottom: 1px solid transparent;
+
+    &:not(:last-child) {
+      border-right: 1px solid #c4c4c4;
+    }
   }
 `;
 

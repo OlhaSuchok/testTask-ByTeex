@@ -2,10 +2,10 @@ export const theme = {
   breakpoints: ["428px", "1464px"],
 
   fonts: {
-    SofiaProExtraLight: "'Sofia Pro Extra Light', sans-serif",
-    SofiaProRegular: "'Sofia Pro Regular', sans-serif",
-    SofiaProSemiBold: "'Sofia Pro Semi Bold', sans-serif",
-    SuisseRegular: "'SuisseIntl-Regular', sans-serif",
+    sofiaProExtraLight: "'Sofia Pro Extra Light', sans-serif",
+    sofiaProRegular: "'Sofia Pro Regular', sans-serif",
+    sofiaProSemiBold: "'Sofia Pro Semi Bold', sans-serif",
+    suisseRegular: "'SuisseIntl-Regular', sans-serif",
   },
 
   fontSizes: [],
@@ -26,6 +26,7 @@ export const theme = {
     MAIN_BTN_COLOR: "#01005B",
     MAIN_TEXT_COLOR: "#676869",
     MAIN_ACCENT_TEXT_COLOR: "#01005B",
+    HEADER_TEXT_COLOR: "#565656",
   },
 
   transitions: {

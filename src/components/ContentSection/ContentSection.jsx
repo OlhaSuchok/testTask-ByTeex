@@ -1,52 +1,54 @@
 import RatingBlock from "components/common/RatingBlock/RatingBlock";
 
-import firstImageMobile1 from "../../images/pictures/contentSection/image1-1x@-428.jpg";
+// import firstImageMobile1 from "../../images/pictures/contentSection/image1-1x@-428.jpg";
 import firstImageMobile2 from "../../images/pictures/contentSection/image1-2x@-428.jpg";
 
 import firstImageDesctop1 from "../../images/pictures/contentSection/image1-1x@-1464.jpg";
 import firstImageDesctop2 from "../../images/pictures/contentSection/image1-2x@-1464.jpg";
 
-import secondImageMobile1 from "../../images/pictures/contentSection/image2-1x@-428.jpg";
+// import secondImageMobile1 from "../../images/pictures/contentSection/image2-1x@-428.jpg";
 import secondImageMobile2 from "../../images/pictures/contentSection/image2-2x@-428.jpg";
 
 import secondImageDesctop1 from "../../images/pictures/contentSection/image2-1x@-1464.jpg";
 import secondImageDesctop2 from "../../images/pictures/contentSection/image2-2x@-1464.jpg";
 
-import thirdImageMobile1 from "../../images/pictures/contentSection/image3-1x@-428.jpg";
+// import thirdImageMobile1 from "../../images/pictures/contentSection/image3-1x@-428.jpg";
 import thirdImageMobile2 from "../../images/pictures/contentSection/image3-2x@-428.jpg";
 
 import thirdImageDesctop1 from "../../images/pictures/contentSection/image3-1x@-1464.jpg";
 import thirdImageDesctop2 from "../../images/pictures/contentSection/image3-2x@-1464.jpg";
 
-import fourthImageMobile1 from "../../images/pictures/contentSection/image4-1x@-428.jpg";
+// import fourthImageMobile1 from "../../images/pictures/contentSection/image4-1x@-428.jpg";
 import fourthImageMobile2 from "../../images/pictures/contentSection/image4-2x@-428.jpg";
 
 import fourthImageDesctop1 from "../../images/pictures/contentSection/image4-1x@-1464.jpg";
 import fourthImageDesctop2 from "../../images/pictures/contentSection/image4-2x@-1464.jpg";
 
-import fifthImageMobile1 from "../../images/pictures/contentSection/image5-1x@-428.jpg";
+// import fifthImageMobile1 from "../../images/pictures/contentSection/image5-1x@-428.jpg";
 import fifthImageMobile2 from "../../images/pictures/contentSection/image5-2x@-428.jpg";
 
 import fifthImageDesctop1 from "../../images/pictures/contentSection/image5-1x@-1464.jpg";
 import fifthImageDesctop2 from "../../images/pictures/contentSection/image5-2x@-1464.jpg";
 
-import sixthImageMobile1 from "../../images/pictures/contentSection/image6-1x@-428.jpg";
+// import sixthImageMobile1 from "../../images/pictures/contentSection/image6-1x@-428.jpg";
 import sixthImageMobile2 from "../../images/pictures/contentSection/image6-2x@-428.jpg";
 
 import sixthImageDesctop1 from "../../images/pictures/contentSection/image6-1x@-1464.jpg";
 import sixthImageDesctop2 from "../../images/pictures/contentSection/image6-2x@-1464.jpg";
 
-import seventhImageMobile1 from "../../images/pictures/contentSection/image7-1x@-428.jpg";
+// import seventhImageMobile1 from "../../images/pictures/contentSection/image7-1x@-428.jpg";
 import seventhImageMobile2 from "../../images/pictures/contentSection/image7-2x@-428.jpg";
 
 import seventhImageDesctop1 from "../../images/pictures/contentSection/image7-1x@-1464.jpg";
 import seventhImageDesctop2 from "../../images/pictures/contentSection/image7-2x@-1464.jpg";
 
-import eighthImageMobile1 from "../../images/pictures/contentSection/image8-1x@-428.jpg";
+// import eighthImageMobile1 from "../../images/pictures/contentSection/image8-1x@-428.jpg";
 import eighthImageMobile2 from "../../images/pictures/contentSection/image8-2x@-428.jpg";
 
 import eighthImageDesctop1 from "../../images/pictures/contentSection/image8-1x@-1464.jpg";
 import eighthImageDesctop2 from "../../images/pictures/contentSection/image8-2x@-1464.jpg";
+
+import StarList from "components/common/StarList/StarList";
 
 import {
   Section,
@@ -55,6 +57,13 @@ import {
   ListPhoto,
   ListPhotoItem,
   ListPhotoItemImage,
+  CardList,
+  CardListItem,
+  CardListItemIcon,
+  CardListItemMainText,
+  CardListItemText,
+  CardListAvatarWrapper,
+  StarListNameWrapper,
 } from "./ContentSection.styled";
 
 export default function ContentSection() {
@@ -221,58 +230,54 @@ export default function ContentSection() {
           </ListPhotoItemImage>
         </ListPhotoItem>
       </ListPhoto>
-      {/* <ListPhoto>
-        <ListPhotoItem>
-          <ListPhotoItemImage
-            src="https://cdn.pixabay.com/photo/2019/05/14/22/05/container-4203677__340.jpg"
-            alt="Description"
-          ></ListPhotoItemImage>
-        </ListPhotoItem>
-        <ListPhotoItem>
-          <ListPhotoItemImage
-            src="https://cdn.pixabay.com/photo/2019/05/14/22/05/container-4203677__340.jpg"
-            alt="Description"
-          ></ListPhotoItemImage>
-        </ListPhotoItem>
-        <ListPhotoItem>
-          <ListPhotoItemImage
-            src="https://cdn.pixabay.com/photo/2019/05/14/22/05/container-4203677__340.jpg"
-            alt="Description"
-          ></ListPhotoItemImage>
-        </ListPhotoItem>
-        <ListPhotoItem>
-          <ListPhotoItemImage
-            src="https://cdn.pixabay.com/photo/2019/05/14/22/05/container-4203677__340.jpg"
-            alt="Description"
-          ></ListPhotoItemImage>
-        </ListPhotoItem>
-        <ListPhotoItem>
-          <ListPhotoItemImage
-            src="https://cdn.pixabay.com/photo/2019/05/14/22/05/container-4203677__340.jpg"
-            alt="Description"
-          ></ListPhotoItemImage>
-        </ListPhotoItem>
-        <ListPhotoItem>
-          <ListPhotoItemImage
-            src="https://cdn.pixabay.com/photo/2019/05/14/22/05/container-4203677__340.jpg"
-            alt="Description"
-          ></ListPhotoItemImage>
-        </ListPhotoItem>
-        <ListPhotoItem>
-          <ListPhotoItemImage
-            src="https://cdn.pixabay.com/photo/2019/05/14/22/05/container-4203677__340.jpg"
-            alt="Description"
-          ></ListPhotoItemImage>
-        </ListPhotoItem>
-        <ListPhotoItem>
-          <ListPhotoItemImage
-            src="https://cdn.pixabay.com/photo/2019/05/14/22/05/container-4203677__340.jpg"
-            alt="Description"
-          ></ListPhotoItemImage>
-        </ListPhotoItem>
-      </ListPhoto> */}
-      <p>SLIDE</p>
-      <p>PAGINATION</p>
+
+      <CardList>
+        <CardListItem>
+          <CardListAvatarWrapper>
+            <CardListItemIcon></CardListItemIcon>
+            <StarListNameWrapper>
+              <StarList />
+              <CardListItemMainText>Jane, S.</CardListItemMainText>
+            </StarListNameWrapper>
+          </CardListAvatarWrapper>
+          <CardListItemText>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Pellentesque sed sollicitudin dolor, non sodales justo. Aenean eget
+            aliquet mi.
+          </CardListItemText>
+        </CardListItem>
+
+        <CardListItem>
+          <CardListAvatarWrapper>
+            <CardListItemIcon></CardListItemIcon>
+            <StarListNameWrapper>
+              <StarList />
+              <CardListItemMainText>Jane, S.</CardListItemMainText>
+            </StarListNameWrapper>
+          </CardListAvatarWrapper>
+          <CardListItemText>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Pellentesque sed sollicitudin dolor, non sodales justo. Aenean eget
+            aliquet mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Pellentesque sed sollicitudin dolor, non sodales.
+          </CardListItemText>
+        </CardListItem>
+
+        <CardListItem>
+          <CardListAvatarWrapper>
+            <CardListItemIcon></CardListItemIcon>
+            <StarListNameWrapper>
+              <StarList />
+              <CardListItemMainText>Jane, S.</CardListItemMainText>
+            </StarListNameWrapper>
+          </CardListAvatarWrapper>
+          <CardListItemText>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Pellentesque sed sollicitudin dolor, non sodales justo. Aenean eget
+            aliquet mi.
+          </CardListItemText>
+        </CardListItem>
+      </CardList>
       <RatingBlock test={"Over 500+ 5 Star Reviews Online"} />
     </Section>
   );

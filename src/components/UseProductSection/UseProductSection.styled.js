@@ -73,9 +73,7 @@ export const CardListItem = styled.li`
   border-radius: 8px;
   background-color: #ededed;
 
-  padding-left: 35px;
-  padding-right: 35px;
-
+  padding: 30px;
   margin-right: 0;
 
   &:nth-child(2n) {
@@ -92,6 +90,9 @@ export const CardListItem = styled.li`
     }
 
     margin-bottom: 0;
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
   }
 `;
 

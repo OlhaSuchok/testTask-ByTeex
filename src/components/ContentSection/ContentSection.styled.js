@@ -6,7 +6,8 @@ export const Section = styled.section`
   justify-content: center;
   align-items: center;
 
-  padding-bottom: 20px;
+  padding-bottom: 50px;
+
   margin-left: auto;
   margin-right: auto;
 
@@ -15,6 +16,7 @@ export const Section = styled.section`
   }
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
     width: ${({ theme }) => theme.breakpoints.desktop};
+
     padding-left: 100px;
     padding-right: 100px;
     padding-bottom: 50px;
@@ -33,13 +35,15 @@ export const Title = styled.h2`
   color: ${({ theme }) => theme.colors.MAIN_ACCENT_TEXT_COLOR};
 
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
-    font-size: 32px;
     margin-bottom: 40px;
+
+    font-size: 32px;
   }
 `;
 
 export const Text = styled.p`
   text-align: center;
+
   margin-top: 0;
   margin-bottom: 40px;
 
@@ -65,14 +69,13 @@ export const ListPhoto = styled.ul`
 
   margin-right: 0;
   margin-top: 0;
-
-  list-style: none;
+  margin-bottom: 30px;
+  padding: 0;
 
   width: 428px;
 
-  margin-bottom: 30px;
+  list-style: none;
 
-  padding: 0;
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
     margin-bottom: 76px;
   }
@@ -81,43 +84,38 @@ export const ListPhoto = styled.ul`
 export const ListPhotoItem = styled.li`
   width: 100px;
   margin: 2px;
-
-  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
-  }
 `;
 
-export const ListPhotoItemImage = styled.picture`
-  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
-  }
-`;
+export const ListPhotoItemImage = styled.picture``;
 
 export const CardList = styled.ul`
-  padding-left: 0;
-
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 
   margin-bottom: 30px;
+  margin-top: 0;
+  padding-left: 0;
 
   list-style: none;
-  margin-top: 0;
 
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
     flex-direction: row;
     align-items: center;
+
     margin-bottom: 0;
   }
 `;
 
 export const CardListItem = styled.li`
   width: 346px;
-  border-radius: 8px;
-  background-color: #ffffff;
 
   padding: 39px;
   margin-right: 0;
+
+  border-radius: 8px;
+  background-color: #ffffff;
   box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.3);
 
   &:not(:last-child) {
@@ -131,7 +129,6 @@ export const CardListItem = styled.li`
     &:not(:last-child) {
       margin-bottom: 0;
     }
-
     margin-bottom: 0;
   }
 `;
@@ -139,13 +136,12 @@ export const CardListItem = styled.li`
 export const CardListItemIcon = styled.div`
   width: 39px;
   height: 39px;
-  background-color: #000000;
-  border-radius: 50px;
+
   margin-bottom: 0;
   margin-right: 10px;
 
-  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
-  }
+  background-color: #000000;
+  border-radius: 50px;
 `;
 
 export const CardListItemMainText = styled.p`
@@ -157,8 +153,6 @@ export const CardListItemMainText = styled.p`
   margin-top: 0;
 
   margin-bottom: 0;
-  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
-  }
 `;
 
 export const CardListItemText = styled.p`
@@ -171,9 +165,6 @@ export const CardListItemText = styled.p`
 
   margin-top: 0;
   margin-bottom: 0;
-
-  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
-  }
 `;
 
 export const CardListAvatarWrapper = styled.div`
@@ -183,9 +174,6 @@ export const CardListAvatarWrapper = styled.div`
   align-items: flex-start;
 
   margin-bottom: 10px;
-
-  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
-  }
 `;
 
 export const StarListNameWrapper = styled.div`
@@ -193,30 +181,31 @@ export const StarListNameWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-
-  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
-  }
 `;
 
 export const ArrowLeftButton = styled.button`
   display: none;
   cursor: pointer;
+
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
     display: block;
-    background-color: transparent;
     border: none;
     margin-right: 20px;
+
+    background-color: transparent;
   }
 `;
 
 export const ArrowRightButton = styled.button`
   display: none;
   cursor: pointer;
+
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
     display: block;
-    background-color: transparent;
     border: none;
     margin-left: 20px;
+
+    background-color: transparent;
   }
 `;
 
@@ -225,8 +214,10 @@ export const SliderWrapper = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding-bottom: 56px;
+  padding-bottom: 0;
+
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+    padding-bottom: 56px;
   }
 `;
 

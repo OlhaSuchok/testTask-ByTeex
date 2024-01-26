@@ -1,3 +1,18 @@
+import RatingBlock from "components/common/RatingBlock/RatingBlock";
+
+import firstImageMobile1 from "../../images/pictures/aboutSection/about-a1x@-428.jpg";
+import firstImageMobile2 from "../../images/pictures/aboutSection/about-a2x@-428.jpg";
+import firstImageDesctop1 from "../../images/pictures/aboutSection/about-a1x@-1464.jpg";
+import firstImageDesctop2 from "../../images/pictures/aboutSection/about-a2x@-1464.jpg";
+import secondImageMobile1 from "../../images/pictures/aboutSection/about-b1x@-428.jpg";
+import secondImageMobile2 from "../../images/pictures/aboutSection/about-b2x@-428.jpg";
+import secondImageDesctop1 from "../../images/pictures/aboutSection/about-b1x@-1464.jpg";
+import secondImageDesctop2 from "../../images/pictures/aboutSection/about-b2x@-1464.jpg";
+import thirdImageMobile1 from "../../images/pictures/aboutSection/about-c1x@-428.jpg";
+import thirdImageMobile2 from "../../images/pictures/aboutSection/about-c2x@-428.jpg";
+import thirdImageDesctop1 from "../../images/pictures/aboutSection/about-c1x@-1464.jpg";
+import thirdImageDesctop2 from "../../images/pictures/aboutSection/about-c2x@-1464.jpg";
+
 import {
   Section,
   Title,
@@ -9,26 +24,6 @@ import {
   TextWrapper,
   RatingBlockWrapper,
 } from "./AboutSection.styled";
-
-import firstImageMobile1 from "../../images/pictures/aboutSection/about-a1x@-428.jpg";
-import firstImageMobile2 from "../../images/pictures/aboutSection/about-a2x@-428.jpg";
-
-import firstImageDesctop1 from "../../images/pictures/aboutSection/about-a1x@-1464.jpg";
-import firstImageDesctop2 from "../../images/pictures/aboutSection/about-a2x@-1464.jpg";
-
-import secondImageMobile1 from "../../images/pictures/aboutSection/about-b1x@-428.jpg";
-import secondImageMobile2 from "../../images/pictures/aboutSection/about-b2x@-428.jpg";
-
-import secondImageDesctop1 from "../../images/pictures/aboutSection/about-b1x@-1464.jpg";
-import secondImageDesctop2 from "../../images/pictures/aboutSection/about-b2x@-1464.jpg";
-
-import thirdImageMobile1 from "../../images/pictures/aboutSection/about-c1x@-428.jpg";
-import thirdImageMobile2 from "../../images/pictures/aboutSection/about-c2x@-428.jpg";
-
-import thirdImageDesctop1 from "../../images/pictures/aboutSection/about-c1x@-1464.jpg";
-import thirdImageDesctop2 from "../../images/pictures/aboutSection/about-c2x@-1464.jpg";
-
-import RatingBlock from "components/common/RatingBlock/RatingBlock";
 
 export default function AboutSection() {
   return (

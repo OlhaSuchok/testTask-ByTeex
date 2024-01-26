@@ -6,32 +6,32 @@ export const Section = styled.section`
   justify-content: center;
   align-items: center;
 
-  padding-bottom: 45px;
+  padding-bottom: 40px;
+  padding-top: 50px;
 
   margin-left: auto;
   margin-right: auto;
 
   background-image: linear-gradient(to bottom, #f6f9e5, #ffffff);
-
-  background: #f6f9e5;
   background: linear-gradient(to bottom, #f6f9e5 0%, #ffffff 70%);
 
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.mobile}) {
     width: ${({ theme }) => theme.breakpoints.mobile};
   }
+
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
     position: relative;
 
     padding-left: 100px;
     padding-right: 100px;
+    padding-bottom: 200px;
 
     width: ${({ theme }) => theme.breakpoints.desktop};
   }
 `;
 
 export const DescribeNamesWrapper = styled.div`
-  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
-  }
+  margin-bottom: 20px;
 `;
 
 export const DescribeTextWrapper = styled.div`
@@ -41,8 +41,6 @@ export const DescribeTextWrapper = styled.div`
   align-items: center;
 
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
-    flex-direction: column;
-    justify-content: center;
     align-items: flex-start;
     align-self: flex-start;
   }
@@ -53,7 +51,7 @@ export const DescribeText = styled.p`
   margin-top: 0;
   margin-bottom: 16px;
 
-  padding-top: 30px;
+  padding-top: 0;
 
   font-size: 15px;
   font-family: ${({ theme }) => theme.fonts.sofiaProRegular};
@@ -63,7 +61,7 @@ export const DescribeText = styled.p`
 
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
     margin-bottom: 25px;
-    padding-top: 50px;
+    padding-top: 0;
 
     font-size: 20px;
   }
@@ -83,7 +81,6 @@ export const ListNames = styled.ul`
   list-style: none;
 
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
-    margin-bottom: 80px;
   }
 `;
 
@@ -135,22 +132,15 @@ export const SliderWrapper = styled.div`
 
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
     position: absolute;
+    top: 170px;
     right: 100px;
 
     margin-bottom: 0;
   }
 `;
 
-export const Slider = styled.div`
-  width: 303px;
-  height: 430px;
-
-  background-color: beige;
-
+export const Slider = styled.picture`
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
-    width: 433px;
-    height: 500px;
-
     margin-bottom: 0;
   }
 `;
@@ -221,9 +211,7 @@ export const ListBenefitsBlockWrapper = styled.div`
   align-items: center;
 
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
-    justify-content: center;
     flex-direction: row;
-    align-items: center;
   }
 `;
 
@@ -264,8 +252,9 @@ export const ListBenefitsText = styled.p`
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
     text-align: left;
     padding-left: 60px;
-    font-size: 15px;
     margin-bottom: 0;
+
+    font-size: 15px;
   }
 `;
 
@@ -278,25 +267,19 @@ export const RatingBlockWrapper = styled.div`
 `;
 
 export const ArrowLeftButton = styled.button`
-  display: none;
   cursor: pointer;
-  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
-    display: block;
-    background-color: transparent;
-    border: none;
-    margin-right: 20px;
-  }
+  display: block;
+  background-color: transparent;
+  border: none;
+  margin-right: 20px;
 `;
 
 export const ArrowRightButton = styled.button`
-  display: none;
   cursor: pointer;
-  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
-    display: block;
-    background-color: transparent;
-    border: none;
-    margin-left: 20px;
-  }
+  display: block;
+  background-color: transparent;
+  border: none;
+  margin-left: 20px;
 `;
 
 export const SliderArrowWrapper = styled.div`
@@ -304,6 +287,14 @@ export const SliderArrowWrapper = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: center;
+`;
+
+export const Image = styled.img`
+  width: 303px;
+  height: 453px;
+
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+    width: 433px;
+    height: 648px;
   }
 `;

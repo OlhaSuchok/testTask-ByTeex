@@ -60,13 +60,22 @@ export const InfoItem = styled.li`
   padding-bottom: 16px;
   padding-top: 16px;
 
-  border-bottom: 1px solid #c4c4c4;
+  &:not(:last-child) {
+    border-bottom: 1px solid #c4c4c4;
+  }
 
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
     border-bottom: 1px solid transparent;
 
+    padding-bottom: 0;
+    padding-top: 0;
+
     &:not(:last-child) {
       border-right: 1px solid #c4c4c4;
+    }
+
+    &:not(:last-child) {
+      border-bottom: none;
     }
   }
 `;

@@ -5,8 +5,6 @@ export const RatingBlockWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
-  }
 `;
 
 export const RatingWrapper = styled.div`
@@ -16,9 +14,6 @@ export const RatingWrapper = styled.div`
   align-items: center;
 
   padding-top: 10px;
-
-  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
-  }
 `;
 
 export const RatingText = styled.p`
@@ -29,7 +24,4 @@ export const RatingText = styled.p`
   line-height: 1.7;
 
   color: #828282;
-
-  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
-  }
 `;

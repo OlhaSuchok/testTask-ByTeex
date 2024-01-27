@@ -200,7 +200,7 @@ export const CardListItemTextMobile = styled.p`
 `;
 
 export const ArrowLeftButtonMobile = styled.button`
-  margin-right: 20px;
+  margin-right: 15px;
 
   border: none;
   background-color: transparent;
@@ -209,7 +209,7 @@ export const ArrowLeftButtonMobile = styled.button`
 `;
 
 export const ArrowRightButtonMobile = styled.button`
-  margin-left: 20px;
+  margin-left: 15px;
   border: none;
   background-color: transparent;
 

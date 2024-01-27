@@ -246,9 +246,9 @@ export const CardListMobile = styled.ul`
 `;
 
 export const CardListItemMobile = styled.li`
-  width: 346px;
+  width: 300px;
 
-  padding: 39px;
+  padding: 26px 33px;
   margin-right: 0;
 
   border-radius: 8px;
@@ -260,6 +260,9 @@ export const CardListItemMobile = styled.li`
   }
 
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+    width: 346px;
+    padding: 39px;
+
     &:not(:last-child) {
       margin-right: 40px;
     }
@@ -321,7 +324,7 @@ export const StarListNameWrapperMobile = styled.div`
 `;
 
 export const ArrowLeftButtonMobile = styled.button`
-  margin-right: 20px;
+  margin-right: 15px;
 
   border: none;
   background-color: transparent;
@@ -330,7 +333,7 @@ export const ArrowLeftButtonMobile = styled.button`
 `;
 
 export const ArrowRightButtonMobile = styled.button`
-  margin-left: 20px;
+  margin-left: 15px;
   border: none;
   background-color: transparent;
 

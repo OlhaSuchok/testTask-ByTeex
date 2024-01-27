@@ -74,7 +74,7 @@ export const CardListItem = styled.li`
   border-radius: 8px;
   background-color: #ededed;
 
-  &:nth-child(2n) {
+  &:nth-of-type(2n) {
     background-color: #f9f0e6;
   }
 

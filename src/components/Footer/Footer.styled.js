@@ -204,7 +204,7 @@ export const InfoItem = styled.li`
 
     height: 50px;
 
-    &:not(:first-child) {
+    &:not(:first-of-type) {
       padding-left: 15px;
     }
 

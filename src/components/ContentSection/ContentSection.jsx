@@ -62,7 +62,6 @@ import {
 
 export default function ContentSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
-
   const data = [
     {
       image: "",
@@ -217,9 +216,10 @@ export default function ContentSection() {
       </ListPhoto>
 
       <SliderWrapper>
-        <ArrowLeftButton>
+        <ArrowLeftButton type="button">
           <ArrowLeft />
         </ArrowLeftButton>
+
         <CardList>
           <CardListItem>
             <CardListAvatarWrapper>
@@ -267,13 +267,14 @@ export default function ContentSection() {
             </CardListItemText>
           </CardListItem>
         </CardList>
-        <ArrowRightButton>
+
+        <ArrowRightButton type="button">
           <ArrowRight />
         </ArrowRightButton>
       </SliderWrapper>
 
       <SliderWrapperMobile>
-        <ArrowLeftButtonMobile onClick={handlePrevClick}>
+        <ArrowLeftButtonMobile type="button" onClick={handlePrevClick}>
           <ArrowLeft />
         </ArrowLeftButtonMobile>
 
@@ -294,7 +295,7 @@ export default function ContentSection() {
           </CardListItemMobile>
         </CardListMobile>
 
-        <ArrowRightButtonMobile onClick={handleNextClick}>
+        <ArrowRightButtonMobile type="button" onClick={handleNextClick}>
           <ArrowRight />
         </ArrowRightButtonMobile>
       </SliderWrapperMobile>

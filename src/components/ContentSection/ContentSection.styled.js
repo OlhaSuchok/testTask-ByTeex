@@ -104,6 +104,8 @@ export const CardList = styled.ul`
     flex-direction: row;
     align-items: center;
 
+    height: 270px;
+
     margin-bottom: 0;
   }
 `;

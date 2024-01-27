@@ -83,6 +83,31 @@ export default function ContentSection() {
       name: "Bob",
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed sollicitudin dolor, non sodales justo. Aenean eget aliquet mi.",
     },
+    {
+      image: "",
+      name: "Kate",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed sollicitudin dolor, non sodales justo. Aenean eget aliquet mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed sollicitudin dolor, non sodales.",
+    },
+    {
+      image: "",
+      name: "Lina",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    },
+    {
+      image: "",
+      name: "Ann",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed sollicitudin dolor, non sodales justo. Aenean eget aliquet mi.",
+    },
+    {
+      image: "",
+      name: "Oliver",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    },
+    {
+      image: "",
+      name: "Lili",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed sollicitudin dolor, non sodales justo. Aenean eget aliquet mi.",
+    },
   ];
 
   const handleNextClick = () => {
@@ -91,6 +116,14 @@ export default function ContentSection() {
 
   const handlePrevClick = () => {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + data.length) % data.length);
+  };
+
+  const handleNextDesctopClick = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 3) % data.length);
+  };
+
+  const handlePrevDesctopClick = () => {
+    setCurrentIndex((prevIndex) => (prevIndex - 3 + data.length) % data.length);
   };
 
   return (
@@ -216,59 +249,26 @@ export default function ContentSection() {
       </ListPhoto>
 
       <SliderWrapper>
-        <ArrowLeftButton type="button">
+        <ArrowLeftButton type="button" onClick={handlePrevDesctopClick}>
           <ArrowLeft />
         </ArrowLeftButton>
 
         <CardList>
-          <CardListItem>
-            <CardListAvatarWrapper>
-              <CardListItemIcon></CardListItemIcon>
-              <StarListNameWrapper>
-                <StarList />
-                <CardListItemMainText>Jane, S.</CardListItemMainText>
-              </StarListNameWrapper>
-            </CardListAvatarWrapper>
-            <CardListItemText>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Pellentesque sed sollicitudin dolor, non sodales justo. Aenean
-              eget aliquet mi.
-            </CardListItemText>
-          </CardListItem>
-
-          <CardListItem>
-            <CardListAvatarWrapper>
-              <CardListItemIcon></CardListItemIcon>
-              <StarListNameWrapper>
-                <StarList />
-                <CardListItemMainText>Jane, S.</CardListItemMainText>
-              </StarListNameWrapper>
-            </CardListAvatarWrapper>
-            <CardListItemText>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Pellentesque sed sollicitudin dolor, non sodales justo. Aenean
-              eget aliquet mi. Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Pellentesque sed sollicitudin dolor, non sodales.
-            </CardListItemText>
-          </CardListItem>
-
-          <CardListItem>
-            <CardListAvatarWrapper>
-              <CardListItemIcon></CardListItemIcon>
-              <StarListNameWrapper>
-                <StarList />
-                <CardListItemMainText>Jane, S.</CardListItemMainText>
-              </StarListNameWrapper>
-            </CardListAvatarWrapper>
-            <CardListItemText>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Pellentesque sed sollicitudin dolor, non sodales justo. Aenean
-              eget aliquet mi.
-            </CardListItemText>
-          </CardListItem>
+          {data.slice(currentIndex, currentIndex + 3).map((item, index) => (
+            <CardListItem key={index}>
+              <CardListAvatarWrapper>
+                <CardListItemIcon></CardListItemIcon>
+                <StarListNameWrapper>
+                  <StarList />
+                  <CardListItemMainText>{item.name}</CardListItemMainText>
+                </StarListNameWrapper>
+              </CardListAvatarWrapper>
+              <CardListItemText>{item.text}</CardListItemText>
+            </CardListItem>
+          ))}
         </CardList>
 
-        <ArrowRightButton type="button">
+        <ArrowRightButton type="button" onClick={handleNextDesctopClick}>
           <ArrowRight />
         </ArrowRightButton>
       </SliderWrapper>

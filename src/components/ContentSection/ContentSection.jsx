@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import RatingBlock from "components/common/RatingBlock/RatingBlock";
 import StarList from "components/common/StarList/StarList";
 import ArrowLeft from "images/contentIcons/ArrowLeft/ArrowLeft";
@@ -46,9 +48,52 @@ import {
   SliderWrapper,
   ArrowLeftButton,
   ArrowRightButton,
+  CardListMobile,
+  CardListItemMobile,
+  CardListItemIconMobile,
+  CardListItemMainTextMobile,
+  CardListItemTextMobile,
+  CardListAvatarWrapperMobile,
+  StarListNameWrapperMobile,
+  SliderWrapperMobile,
+  ArrowLeftButtonMobile,
+  ArrowRightButtonMobile,
 } from "./ContentSection.styled";
 
 export default function ContentSection() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const data = [
+    {
+      image: "",
+      name: "Jane",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed sollicitudin dolor, non sodales justo. Aenean eget aliquet mi.",
+    },
+    {
+      image: "",
+      name: "Alex",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed sollicitudin dolor, non sodales justo. Aenean eget aliquet mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed sollicitudin dolor, non sodales.",
+    },
+    {
+      image: "",
+      name: "Mike",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    },
+    {
+      image: "",
+      name: "Bob",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed sollicitudin dolor, non sodales justo. Aenean eget aliquet mi.",
+    },
+  ];
+
+  const handleNextClick = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % data.length);
+  };
+
+  const handlePrevClick = () => {
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + data.length) % data.length);
+  };
+
   return (
     <Section>
       <Title>What are our fans saying?</Title>
@@ -226,6 +271,34 @@ export default function ContentSection() {
           <ArrowRight />
         </ArrowRightButton>
       </SliderWrapper>
+
+      <SliderWrapperMobile>
+        <ArrowLeftButtonMobile onClick={handlePrevClick}>
+          <ArrowLeft />
+        </ArrowLeftButtonMobile>
+
+        <CardListMobile>
+          <CardListItemMobile>
+            <CardListAvatarWrapperMobile>
+              <CardListItemIconMobile></CardListItemIconMobile>
+              <StarListNameWrapperMobile>
+                <StarList />
+                <CardListItemMainTextMobile>
+                  {data[currentIndex].name}
+                </CardListItemMainTextMobile>
+              </StarListNameWrapperMobile>
+            </CardListAvatarWrapperMobile>
+            <CardListItemTextMobile>
+              {data[currentIndex].text}
+            </CardListItemTextMobile>
+          </CardListItemMobile>
+        </CardListMobile>
+
+        <ArrowRightButtonMobile onClick={handleNextClick}>
+          <ArrowRight />
+        </ArrowRightButtonMobile>
+      </SliderWrapperMobile>
+
       <RatingBlock test={"Over 500+ 5 Star Reviews Online"} />
     </Section>
   );

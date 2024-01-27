@@ -184,11 +184,9 @@ export const StarListNameWrapper = styled.div`
 `;
 
 export const ArrowLeftButton = styled.button`
-  display: none;
   cursor: pointer;
 
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
-    display: block;
     border: none;
     margin-right: 20px;
 
@@ -197,11 +195,9 @@ export const ArrowLeftButton = styled.button`
 `;
 
 export const ArrowRightButton = styled.button`
-  display: none;
   cursor: pointer;
 
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
-    display: block;
     border: none;
     margin-left: 20px;
 
@@ -210,13 +206,14 @@ export const ArrowRightButton = styled.button`
 `;
 
 export const SliderWrapper = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 0;
+  display: none;
 
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 0;
     padding-bottom: 56px;
   }
 `;
@@ -225,5 +222,131 @@ export const Image = styled.img`
   width: 100px;
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
     width: 100px;
+  }
+`;
+
+export const CardListMobile = styled.ul`
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  margin-bottom: 30px;
+  margin-top: 0;
+  padding-left: 0;
+
+  list-style: none;
+
+  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+    flex-direction: row;
+    align-items: center;
+
+    margin-bottom: 0;
+  }
+`;
+
+export const CardListItemMobile = styled.li`
+  width: 346px;
+
+  padding: 39px;
+  margin-right: 0;
+
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.3);
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+    margin-bottom: 0;
+  }
+`;
+
+export const CardListItemIconMobile = styled.div`
+  width: 39px;
+  height: 39px;
+
+  margin-bottom: 0;
+  margin-right: 10px;
+
+  background-color: #000000;
+  border-radius: 50px;
+`;
+
+export const CardListItemMainTextMobile = styled.p`
+  font-size: 15px;
+  font-family: ${({ theme }) => theme.fonts.sofiaProRegular};
+  line-height: 1.9;
+
+  color: #676869;
+  margin-top: 0;
+
+  margin-bottom: 0;
+`;
+
+export const CardListItemTextMobile = styled.p`
+  text-align: left;
+  font-size: 12px;
+  font-family: ${({ theme }) => theme.fonts.sofiaProRegular};
+  line-height: 1.5;
+
+  color: #676869;
+
+  margin-top: 0;
+  margin-bottom: 0;
+`;
+
+export const CardListAvatarWrapperMobile = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  margin-bottom: 10px;
+`;
+
+export const StarListNameWrapperMobile = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+`;
+
+export const ArrowLeftButtonMobile = styled.button`
+  margin-right: 20px;
+
+  border: none;
+  background-color: transparent;
+
+  cursor: pointer;
+`;
+
+export const ArrowRightButtonMobile = styled.button`
+  margin-left: 20px;
+  border: none;
+  background-color: transparent;
+
+  cursor: pointer;
+`;
+
+export const SliderWrapperMobile = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 0;
+
+  height: 280px;
+
+  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+    display: none;
   }
 `;

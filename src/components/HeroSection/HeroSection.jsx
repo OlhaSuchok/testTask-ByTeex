@@ -1,4 +1,5 @@
 import MainButton from "components/common/MainButton/MainButton";
+import StarList from "components/common/StarList/StarList";
 
 import Logo from "images/commonIcons/Logo/Logo";
 import Sun from "images/heroIcons/Sun/Sun";
@@ -35,6 +36,12 @@ import {
   SecondTransparentBlock,
   SideImage,
   CenterImage,
+  Card,
+  CardIcon,
+  CardMainText,
+  CardText,
+  CardAvatarWrapper,
+  StarListNameWrapper,
 } from "./HeroSection.styled";
 
 export default function HeroSection() {
@@ -127,6 +134,21 @@ export default function HeroSection() {
         </DescriptionItem>
       </DescriptionList>
       <MainButton />
+      <Card>
+        <CardAvatarWrapper>
+          <CardIcon></CardIcon>
+          <StarListNameWrapper>
+            <CardMainText>Jane, S.</CardMainText>
+            <StarList />
+          </StarListNameWrapper>
+        </CardAvatarWrapper>
+        <CardText>
+          Overjoyed with my Loungewear set. I have the jogger and the
+          sweatshirt. Quality product on every level. From the compostable
+          packaging, to the supplied washing bag, even the garments smells like
+          fresh herbs when I first held them.
+        </CardText>
+      </Card>
     </Section>
   );
 }

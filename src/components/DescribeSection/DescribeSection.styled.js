@@ -7,7 +7,7 @@ export const Section = styled.section`
   align-items: center;
 
   padding-bottom: 40px;
-  padding-top: 50px;
+  padding-top: 100px;
 
   margin-left: auto;
   margin-right: auto;
@@ -22,9 +22,7 @@ export const Section = styled.section`
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
     position: relative;
 
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-bottom: 200px;
+    padding: 50px 100px 200px 100px;
 
     width: ${({ theme }) => theme.breakpoints.desktop};
   }

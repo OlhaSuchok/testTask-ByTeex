@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import PaginationButton from "components/common/PaginationButton/PaginationButton";
+
 import RatingBlock from "components/common/RatingBlock/RatingBlock";
 import StarList from "components/common/StarList/StarList";
 import ArrowLeft from "images/contentIcons/ArrowLeft/ArrowLeft";
@@ -62,6 +64,9 @@ import {
 
 export default function ContentSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isPrevButtonClicked, setIsPrevButtonClicked] = useState(false);
+  const [isNextButtonClicked, setIsNextButtonClicked] = useState(false);
+
   const data = [
     {
       image: "",
@@ -112,10 +117,14 @@ export default function ContentSection() {
 
   const handleNextClick = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % data.length);
+    setIsNextButtonClicked(true);
+    setIsPrevButtonClicked(false);
   };
 
   const handlePrevClick = () => {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + data.length) % data.length);
+    setIsPrevButtonClicked(true);
+    setIsNextButtonClicked(false);
   };
 
   const handleNextDesctopClick = () => {
@@ -299,6 +308,16 @@ export default function ContentSection() {
           <ArrowRight />
         </ArrowRightButtonMobile>
       </SliderWrapperMobile>
+
+      <PaginationButton
+        mb={"20px"}
+        onPrevClick={handlePrevClick}
+        onNextClick={handleNextClick}
+        nextClick={isNextButtonClicked}
+        prevClick={isPrevButtonClicked}
+        setNextClick={setIsNextButtonClicked}
+        setPrevClick={setIsPrevButtonClicked}
+      />
 
       <RatingBlock test={"Over 500+ 5 Star Reviews Online"} />
     </Section>

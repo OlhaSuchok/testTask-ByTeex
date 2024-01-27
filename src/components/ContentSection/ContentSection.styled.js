@@ -233,9 +233,10 @@ export const CardListMobile = styled.ul`
   flex-direction: column;
   align-items: center;
 
-  margin-bottom: 30px;
   margin-top: 0;
   padding-left: 0;
+
+  margin-bottom: 0;
 
   list-style: none;
 
@@ -349,7 +350,7 @@ export const SliderWrapperMobile = styled.div`
   justify-content: center;
   padding-bottom: 0;
 
-  height: 280px;
+  height: 270px;
 
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
     display: none;

@@ -142,6 +142,7 @@ export const ImagesGroup = styled.div`
 
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
     position: absolute;
+    top: 150px;
     right: 100px;
 
     width: 815px;

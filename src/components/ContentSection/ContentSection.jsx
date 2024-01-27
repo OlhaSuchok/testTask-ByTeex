@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import PaginationButton from "components/common/PaginationButton/PaginationButton";
+import PaginationButton from "components/common/PaginationCardButton/PaginationCardButton";
 
 import RatingBlock from "components/common/RatingBlock/RatingBlock";
 import StarList from "components/common/StarList/StarList";

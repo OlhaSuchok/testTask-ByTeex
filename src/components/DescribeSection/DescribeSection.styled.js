@@ -66,6 +66,32 @@ export const DescribeText = styled.p`
 `;
 
 export const ListNames = styled.ul`
+  display: none;
+
+  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 0;
+    margin-bottom: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    list-style: none;
+  }
+`;
+
+export const ListNamesItem = styled.li`
+  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+    &:not(:last-child) {
+      margin-right: 100px;
+    }
+  }
+`;
+
+export const ListNamesMobile = styled.ul`
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -79,16 +105,23 @@ export const ListNames = styled.ul`
   list-style: none;
 
   @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+    display: none;
   }
 `;
 
-export const ListNamesItem = styled.li`
+export const ListNamesItemMobile = styled.li`
   &:not(:last-child) {
     margin-right: 10px;
   }
+`;
 
-  @media screen and (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
-  }
+export const ListNamesItemMobileText = styled.div`
+  font-size: 22px;
+  font-family: ${({ theme }) => theme.fonts.sofiaProRegular};
+  line-height: 1.9;
+
+  color: #676869;
+  opacity: 0.4;
 `;
 
 export const Title = styled.h2`
@@ -295,4 +328,11 @@ export const Image = styled.img`
     width: 433px;
     height: 648px;
   }
+`;
+
+export const PaginationLogosWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 `;

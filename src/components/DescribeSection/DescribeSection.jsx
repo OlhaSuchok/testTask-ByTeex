@@ -14,12 +14,10 @@ import imageMobile1 from "../../images/pictures/describeSection/image1x@-428.jpg
 import imageMobile2 from "../../images/pictures/describeSection/image2x@-428.jpg";
 import imageDesctop1 from "../../images/pictures/describeSection/image1x@-1464.jpg";
 import imageDesctop2 from "../../images/pictures/describeSection/image2x@-1464.jpg";
-
 import firstImageDesctop1 from "../../images/pictures/heroSection/1image1x@-1464.jpg";
 import firstImageDesctop2 from "../../images/pictures/heroSection/1image2x@-1464.jpg";
 import firstImageMobile1 from "../../images/pictures/heroSection/1image1x@-428.jpg";
 import firstImageMobile2 from "../../images/pictures/heroSection/1image2x@-428.jpg";
-
 import thirdImageDesctop1 from "../../images/pictures/heroSection/3image1x@-1464.jpg";
 import thirdImageDesctop2 from "../../images/pictures/heroSection/3image2x@-1464.jpg";
 import thirdImageMobile1 from "../../images/pictures/heroSection/3image1x@-428.jpg";
@@ -30,6 +28,9 @@ import {
   DescribeText,
   ListNames,
   ListNamesItem,
+  ListNamesMobile,
+  ListNamesItemMobile,
+  ListNamesItemMobileText,
   Title,
   Slider,
   SliderWrapper,
@@ -48,9 +49,13 @@ import {
   ArrowLeftButton,
   ArrowRightButton,
 } from "./DescribeSection.styled";
+import PaginationLogoButton from "components/common/PaginationLogoButton/PaginationLogoButton";
 
 export default function DescribeSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [startIdx, setStartIdx] = useState(0);
+  const [isPrevButtonLogoClicked, setIsPrevButtonClicked] = useState(false);
+  const [isNextButtonLogoClicked, setIsNextButtonClicked] = useState(false);
 
   const data = [
     {
@@ -76,12 +81,40 @@ export default function DescribeSection() {
     },
   ];
 
+  const logos = [
+    "ECO-STYLIST",
+    "THE ECO HUB",
+    "CANADIAN",
+    "JILLIAN HARRIS",
+    "TREND HUNTER",
+    "ECO-STYLIST",
+    "THE ECO HUB",
+    "CANADIAN",
+    "JILLIAN HARRIS",
+    "TREND HUNTER",
+  ];
+
   const handleNextClick = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % data.length);
   };
 
   const handlePrevClick = () => {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + data.length) % data.length);
+  };
+
+  const handleLogoNextClick = () => {
+    setStartIdx((prevStartIdx) => (prevStartIdx + 1) % logos.length);
+    setIsNextButtonClicked(true);
+    setIsPrevButtonClicked(false);
+  };
+
+  const handleLogoPrevClick = () => {
+    setStartIdx(
+      (prevStartIdx) => (prevStartIdx - 1 + logos.length) % logos.length
+    );
+
+    setIsNextButtonClicked(false);
+    setIsPrevButtonClicked(true);
   };
 
   return (
@@ -98,7 +131,29 @@ export default function DescribeSection() {
           <ListNamesItem>
             <Eco />
           </ListNamesItem>
+          <ListNamesItem>
+            <Eco />
+          </ListNamesItem>
+          <ListNamesItem>
+            <Eco />
+          </ListNamesItem>
         </ListNames>
+
+        <ListNamesMobile>
+          {logos.slice(startIdx, startIdx + 1).map((svg, index) => (
+            <ListNamesItemMobile key={index}>
+              <ListNamesItemMobileText>{svg}</ListNamesItemMobileText>
+            </ListNamesItemMobile>
+          ))}
+        </ListNamesMobile>
+
+        <PaginationLogoButton
+          mb={"20px"}
+          onPrevClick={handleLogoPrevClick}
+          onNextClick={handleLogoNextClick}
+          nextClick={isNextButtonLogoClicked}
+          prevClick={isPrevButtonLogoClicked}
+        />
       </DescribeNamesWrapper>
 
       <DescribeTextWrapper>

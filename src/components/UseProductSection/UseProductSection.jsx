@@ -28,6 +28,7 @@ import {
 
 export default function UseProductSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
+
   const data = [
     {
       icon: <Basket />,

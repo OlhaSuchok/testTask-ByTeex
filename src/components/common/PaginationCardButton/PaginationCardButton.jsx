@@ -1,6 +1,10 @@
-import { ButtonList, ButtonWrapper, Button } from "./PaginationButton.styled";
+import {
+  ButtonList,
+  ButtonWrapper,
+  Button,
+} from "./PaginationCardButton.styled";
 
-export default function PaginationButton({
+export default function PaginationCardButton({
   onPrevClick,
   onNextClick,
   nextClick,
